@@ -1,2 +1,2 @@
-# Python-Learning
-Learning Python with Hillel school
+# Вивчаю Python
+Пракика в програмуванні мовою Python в компьютерній школі Hillel
