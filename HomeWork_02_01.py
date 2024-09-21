@@ -44,4 +44,3 @@ except TypeError:
 import builtins
 
 print("Сума списка чисел перекритою функцією sum:", builtins.sum(numbers))
-
