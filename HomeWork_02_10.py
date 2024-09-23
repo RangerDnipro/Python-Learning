@@ -11,8 +11,32 @@ products = {}
 
 # Функція для створення товару з карируванням
 def create_product(name):
+    """
+    Функція для створення товару.
+    
+    Параметри:
+    name (str): Назва товару.
+    
+    Повертає:
+    function: Функцію для встановлення ціни.
+    """
     def set_price(price):
+        """
+        Встановлює ціну товару.
+        
+        Параметри:
+        price (float): Ціна товару.
+        
+        Повертає:
+        function: Функцію для встановлення кількості.
+        """
         def set_quantity(quantity):
+            """
+            Встановлює кількість товару.
+            
+            Параметри:
+            quantity (int): Кількість товару.
+            """
             if name not in products:
                 products[name] = {'price': price, 'quantity': quantity}
                 print(f"Товар '{name}' створено з ціною {price} та кількістю {quantity}")
@@ -26,7 +50,25 @@ def create_product(name):
 
 # Функція для зміни ціни товару
 def change_price(name):
+    """
+    Функція для зміни ціни існуючого товару.
+    
+    Параметри:
+    name (str): Назва товару.
+    
+    Повертає:
+    function: Функцію для встановлення нової ціни.
+    """
     def set_new_price(new_price):
+        """
+        Встановлює нову ціну товару.
+        
+        Параметри:
+        new_price (float): Нова ціна товару.
+        
+        Повертає:
+        str: Повідомлення про успішну зміну ціни або про помилку.
+        """
         if name in products:
             old_price = products[name]['price']
             products[name]['price'] = new_price
