@@ -6,11 +6,13 @@
 3.	Додати можливість зберігати, змінювати та переглядати налаштування.
 """
 
+# Глобальний словник із налаштуваннями
+settings = {'theme': 'dark', 'language': 'en', 'notifications': True}
+
 
 # Функція для зберігання та отримання налаштувань
 def create_user_settings():
-    # Локальний словник із налаштуваннями
-    settings = {'theme': 'dark', 'language': 'en', 'notifications': True}
+    global settings
 
     # Вкладена функція для виконання операції
     def manage_user_settings(action, key=None, value=None):
@@ -56,7 +58,8 @@ def user_settings_interface():
 
         elif choice in ('2', '3', '4'):
             # Зміна відповідного налаштування
-            key = {'2': ('theme', 'light/dark'), '3': ('language', 'en/ua'), '4': ('notifications', 'True/False')}[
+            key = {'2': ('theme', 'light/dark або інша'), '3': ('language', 'en/ua або інша'),
+                   '4': ('notifications', 'True/true, якщо буде введено щось інше - сповіщення буде вимкнено')}[
                 choice]
             value = input(f"Введіть нове значення для {key[0]}, наприклад {key[1]}: ")
 
