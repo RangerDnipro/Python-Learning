@@ -5,6 +5,8 @@
 2.	Реалізуйте метод __repr__, щоб можна було коректно виводити об'єкти цього класу у форматі "numerator/denominator".
 """
 
+import math
+
 
 class Fraction:
     def __init__(self, numerator, denominator):
@@ -17,6 +19,15 @@ class Fraction:
             raise ValueError("Знаменник не може дорівнювати нулю")
         self.numerator = numerator
         self.denominator = denominator
+        self._reduce()
+
+    def _reduce(self):
+        """
+        Скорочує дріб до найменших чисел за допомогою НСД (найбільшого спільного дільника).
+        """
+        gcd = math.gcd(self.numerator, self.denominator)
+        self.numerator //= gcd
+        self.denominator //= gcd
 
     def __add__(self, other):
         """
@@ -68,7 +79,7 @@ class Fraction:
         return f"{self.numerator}/{self.denominator}"
 
 
-# Тестування (завдання скорочування дробі не було)
+# Тестування 
 frac1 = Fraction(3, 4)
 frac2 = Fraction(1, 4)
 print(frac1.__add__(frac2))
@@ -78,8 +89,8 @@ print(frac1.__truediv__(frac2))
 
 # Тестування з використанням assert
 if __name__ == "__main__":
-    frac1 = Fraction(1, 2)  # 1/2
-    frac2 = Fraction(1, 3)  # 1/3
+    frac1 = Fraction(1, 2) 
+    frac2 = Fraction(1, 3) 
 
     # Додавання
     result_add = frac1 + frac2
