@@ -68,7 +68,7 @@ class Fraction:
         return f"{self.numerator}/{self.denominator}"
 
 
-# Тестування (завдання скорочування дробі не було)
+# Тестування (завдання скорочувати дроби не було)
 frac1 = Fraction(3, 4)
 frac2 = Fraction(1, 4)
 print(frac1.__add__(frac2))
