@@ -11,14 +11,14 @@ import math
 class Vector:
     def __init__(self, *components):
         """
-        Ініціалізація вектора з набору компонент
+        Ініціалізація вектора з набору компонент.
         :param components: координати вектора
         """
         self.components = components
 
     def __add__(self, other):
         """
-        Додає два вектори
+        Додає два вектори.
         Реалізуємо перевірку для порівняння розмірностей двох векторів
         :param other: інший об'єкт Vector
         :return: новий об'єкт Vector
@@ -29,7 +29,7 @@ class Vector:
 
     def __sub__(self, other):
         """
-        Віднімає один вектор від іншого
+        Віднімає один вектор від іншого.
         Реалізуємо перевірку для порівняння розмірностей двох векторів
         :param other: інший об'єкт Vector
         :return: новий об'єкт Vector
@@ -40,15 +40,23 @@ class Vector:
 
     def __mul__(self, scalar):
         """
-        Множить вектор на число
+        Множить вектор на число.
         :param scalar: число
         :return: новий об'єкт Vector
         """
         return Vector(*(x * scalar for x in self.components))
 
+    def __lt__(self, other):
+        """
+        Перевіряє, чи є довжина поточного вектора меншою за довжину іншого.
+        :param other: інший об'єкт Vector
+        :return: True, якщо довжина поточного вектора менша, False — якщо ні
+        """
+        return self.magnitude() < other.magnitude()
+
     def __eq__(self, other):
         """
-        Порівнює два вектори на рівність довжини
+        Порівнює два вектори на рівність довжини.
         :param other: інший об'єкт Vector
         :return: True, якщо довжини однакові, False — якщо ні
         """
@@ -56,14 +64,14 @@ class Vector:
 
     def magnitude(self):
         """
-        Обчислює довжину вектора (модуль)
+        Обчислює довжину вектора (модуль).
         :return: довжина вектора
         """
         return math.sqrt(sum(x ** 2 for x in self.components))
 
     def __repr__(self):
         """
-        Повертає рядкове представлення вектора у вигляді "Vector(components)"
+        Повертає рядкове представлення вектора у вигляді "Vector(components)".
         :return: рядок
         """
         return f"Vector{self.components}"
@@ -79,11 +87,13 @@ print(vec1 + vec2)
 print(vec1 - vec2)
 # ...множення на число
 print(vec1 * 3)
-# ...порівняння за довжиною
-print(vec1 == vec2)
-# ...отримання довжини вектора
+# ...отримання довжин векторів
 print(vec1.magnitude())
 print(vec2.magnitude())
+# ...порівняння за довжиною
+print(vec1 == vec2)
+# ...реалізація __lt__ для підтвердження того, що довжина вектора vec1 менше ніж довжина вектора vec2
+print(vec1 < vec2)
 
 # Тестування з використанням assert
 if __name__ == "__main__":
@@ -104,5 +114,6 @@ if __name__ == "__main__":
 
     # Порівняння
     assert (vec1 == vec2) is False, "Expected vec1 to be not equal to vec2"
+    assert (vec1 < vec2) is True, "Expected vec1 to be shorter than vec2"
 
     print("\nAll tests passed!")
