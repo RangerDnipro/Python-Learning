@@ -47,6 +47,11 @@ class Person:
         return f"{self.name}: {self.age}"
 
 
+# Тестування функцій
+print(Person("Anya", 30) < Person("Dmytro", 25))
+print(Person("Anya", 30) == Person("Dmytro", 25))
+print(Person("Anya", 30) > Person("Dmytro", 25), end='\n\n')
+
 # Тестування з сортуванням
 if __name__ == "__main__":
     people = [
