@@ -1,10 +1,3 @@
-"""
-Завдання 11: Метаклас для обмеження кількості атрибутів (опціонально)
-Реалізуйте метаклас LimitedAttributesMeta, який дозволяє класам мати лише фіксовану кількість атрибутів
-(наприклад, максимум 3). Якщо додати більше атрибутів, має виникати помилка.
-"""
-
-
 class LimitedAttributesMeta(type):
     """
     Метаклас LimitedAttributesMeta обмежує кількість атрибутів, які можна додати до класу
@@ -36,14 +29,17 @@ class LimitedAttributesMeta(type):
 
 
 # Тестування метакласу LimitedAttributesMeta
-class LimitedClass(metaclass=LimitedAttributesMeta):
-    attr1 = 1
-    attr2 = 2
-    attr3 = 3
-    # Розкоментування attr4 викличе помилку:
-    # TypeError: Клас LimitedClass не може мати більше 3 атрибутів.
-    # attr4 = 4
+try:
+    class LimitedClass(metaclass=LimitedAttributesMeta):
+        attr1 = 1
+        attr2 = 2
+        attr3 = 3
+        # Розкоментування attr4 викличе помилку:
+        # TypeError: Клас LimitedClass не може мати більше 3 атрибутів.
+        # attr4 = 4
 
+    obj = LimitedClass()
+    print(f"Об'єкт класу LimitedClass створено з атрибутами: attr1={obj.attr1}, attr2={obj.attr2}, attr3={obj.attr3}")
 
-obj = LimitedClass()
-print(f"Об'єкт класу LimitedClass створено з атрибутами: attr1={obj.attr1}, attr2={obj.attr2}, attr3={obj.attr3}")
+except TypeError as e:
+    print(e)
