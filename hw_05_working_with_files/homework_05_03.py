@@ -11,13 +11,13 @@ from PIL import Image
 
 class ImageMetadataIterator:
     """
-    Ітератор для збору метаданих зображень з каталогу.
+    Ітератор для збору метаданих зображень з каталогу
     """
 
     def __init__(self, directory):
         """
-        Ініціалізація ітератора.
-        :param directory: Шлях до каталогу, де зберігаються зображення.
+        Ініціалізація ітератора
+        :param directory: Шлях до каталогу, де зберігаються зображення
         """
         self.directory = directory
         self.files = [f for f in os.listdir(directory) if f.lower().endswith(('png', 'jpg', 'jpeg', 'gif', 'bmp'))]
@@ -25,14 +25,14 @@ class ImageMetadataIterator:
 
     def __iter__(self):
         """
-        Повертає сам ітератор.
+        Повертає сам ітератор
         """
         return self
 
     def __next__(self):
         """
-        Витягує метадані з наступного зображення. Якщо зображення закінчились, зупиняє ітерацію.
-        :return: Словник з метаданими зображення.
+        Витягує метадані з наступного зображення. Якщо зображення закінчились, зупиняє ітерацію
+        :return: Словник з метаданими зображення
         """
         if self.index >= len(self.files):
             raise StopIteration
@@ -54,9 +54,9 @@ class ImageMetadataIterator:
 
 def save_metadata_to_csv(directory, output_csv):
     """
-    Збирає метадані зі зображень та зберігає їх у файл CSV.
-    :param directory: Каталог, в якому зберігаються зображення.
-    :param output_csv: Файл CSV, куди зберігатимуться метадані.
+    Збирає метадані зі зображень та зберігає їх у файл CSV
+    :param directory: Каталог, в якому зберігаються зображення
+    :param output_csv: Файл CSV, куди зберігатимуться метадані
     """
     # Заголовки для CSV-файлу
     fieldnames = ['file_name', 'format', 'size', 'mode']
