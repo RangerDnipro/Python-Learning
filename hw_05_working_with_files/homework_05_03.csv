@@ -1,0 +1,15 @@
+file_name,format,size,mode
+image_01.png,PNG,"(360, 312)",P
+image_02.png,PNG,"(360, 355)",P
+image_03.png,PNG,"(360, 600)",P
+image_04.png,PNG,"(360, 355)",P
+image_06.jpg,JPEG,"(876, 1020)",RGB
+image_07.jpg,JPEG,"(240, 370)",RGB
+image_08.jpg,JPEG,"(600, 600)",RGB
+image_09.jpeg,JPEG,"(259, 194)",RGB
+image_11.jpeg,JPEG,"(327, 154)",RGB
+image_12.jpeg,JPEG,"(280, 180)",RGB
+image_13.gif,GIF,"(480, 270)",P
+image_14.gif,GIF,"(200, 113)",P
+image_16.bmp,BMP,"(610, 385)",RGBA
+image_17.bmp,BMP,"(610, 385)",RGBA
