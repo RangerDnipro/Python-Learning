@@ -7,10 +7,10 @@
 
 def line_filter(file_name, keyword):
     """
-    Генератор для фільтрації рядків у великому файлі, які містять ключове слово.
-    :param file_name: Ім'я файлу, який буде зчитуватися.
-    :param keyword: Ключове слово, яке повинно бути присутнє в рядку.
-    :yield: Рядки, що містять ключове слово.
+    Генератор для фільтрації рядків у великому файлі, які містять ключове слово
+    :param file_name: Ім'я файлу, який буде зчитуватися
+    :param keyword: Ключове слово, яке повинно бути присутнє в рядку
+    :yield: Рядки, що містять ключове слово
     """
     with open(file_name, 'r', encoding='utf-8') as file:
         for line in file:
@@ -20,10 +20,10 @@ def line_filter(file_name, keyword):
 
 def save_filtered_lines(input_file, output_file, keyword):
     """
-    Використовує генератор для фільтрації рядків з вхідного файлу та записує результат у новий файл.
-    :param input_file: Вхідний файл для читання.
-    :param output_file: Файл для запису відфільтрованих рядків.
-    :param keyword: Ключове слово для пошуку у рядках.
+    Використовує генератор для фільтрації рядків з вхідного файлу та записує результат у новий файл
+    :param input_file: Вхідний файл для читання
+    :param output_file: Файл для запису відфільтрованих рядків
+    :param keyword: Ключове слово для пошуку у рядках
     """
     with open(output_file, 'w', encoding='utf-8') as out_file:
         for line in line_filter(input_file, keyword):
