@@ -22,6 +22,8 @@ class CSVJSONConverter:
         with open(json_file, mode='w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
+        print(f"Файл {csv_file} перетворено на {json_file}")
+
     def json_to_csv(self, json_file, csv_file):
         """
         Перетворює JSON-файл у CSV
@@ -39,3 +41,5 @@ class CSVJSONConverter:
             writer = csv.DictWriter(file, fieldnames=fieldnames)
             writer.writeheader()
             writer.writerows(data)
+
+        print(f"Файл {json_file} перетворено на {csv_file}")
