@@ -51,3 +51,6 @@ def create_initial_xml(file_name='original_xml.xml'):
     tree = ET.ElementTree(root)
     with open(file_name, 'wb') as f:
         tree.write(f, encoding='utf-8', xml_declaration=True)
+
+    print(f"Файл {file_name} створено")
+
