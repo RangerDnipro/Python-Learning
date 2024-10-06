@@ -6,4 +6,5 @@
 
 Щоб встановити цей пакет, виконайте наступну команду:
 
-pip install git+https://github.com/RangerDnipro/Python-Learning.git@main#egg=my_package&subdirectory=hw_06_modules_and_packages/homework_06_01/my_package
+pip install "git+https://github.com/RangerDnipro/Python-Learning.git@main#egg=my_package&subdirectory=hw_06_modules_and_packages/homework_06_01/my_package"
+
