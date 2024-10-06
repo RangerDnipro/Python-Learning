@@ -33,6 +33,8 @@ class XMLJSONConverter:
         with open(json_file, mode='w', encoding='utf-8') as file:
             json.dump(data, file, indent=4, ensure_ascii=False)
 
+        print(f"Файл {xml_file} перетворено на {json_file}")
+
     def json_to_xml(self, json_file, xml_file, root_element="магазин"):
         """
         Ця функція зчитує JSON-файл, перетворює його у формат XML і записує результат у визначений XML-файл
@@ -65,3 +67,6 @@ class XMLJSONConverter:
 
         tree = ET.ElementTree(root)
         tree.write(xml_file, encoding='utf-8', xml_declaration=True)
+
+        print(f"Файл {json_file} перетворено на {xml_file}")
+
