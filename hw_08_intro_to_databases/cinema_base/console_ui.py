@@ -8,13 +8,24 @@ from .search import search_movie_by_title, search_actor_by_name
 
 
 class Movie:
-    def __init__(self, title, release_year=None, genre=None, movie_id=None):
+    def __init__(self, title: str, release_year: int = None, genre: str = None, movie_id: int = None) -> None:
+        """
+        Ініціалізує екземпляр класу Movie
+        :param title: Назва фільму
+        :param release_year: Рік випуску фільму
+        :param genre: Жанр фільму
+        :param movie_id: Ідентифікатор фільму (за замовчуванням None)
+        """
         self.id = movie_id
         self.title = title
         self.release_year = release_year
         self.genre = genre
 
-    def save_to_db(self, cursor):
+    def save_to_db(self, cursor) -> None:
+        """
+        Зберігає або оновлює інформацію про фільм у базі даних
+        :param cursor: Курсор бази даних для виконання SQL-запитів
+        """
         if self.id is None:
             cursor.execute(
                 'INSERT INTO movies (title, release_year, genre) VALUES (?, ?, ?)',
@@ -28,7 +39,13 @@ class Movie:
             )
 
     @classmethod
-    def get_from_db(cls, cursor, movie_id):
+    def get_from_db(cls, cursor, movie_id: int) -> 'Movie':
+        """
+        Отримує інформацію про фільм з бази даних за ідентифікатором
+        :param cursor: Курсор бази даних для виконання SQL-запитів
+        :param movie_id: Ідентифікатор фільму
+        :return: Екземпляр класу Movie або None, якщо фільм не знайдено
+        """
         cursor.execute('SELECT id, title, release_year, genre FROM movies WHERE id = ?', (movie_id,))
         row = cursor.fetchone()
         if row:
@@ -37,12 +54,22 @@ class Movie:
 
 
 class Actor:
-    def __init__(self, name, birth_year=None, actor_id=None):
+    def __init__(self, name: str, birth_year: int = None, actor_id: int = None) -> None:
+        """
+        Ініціалізує екземпляр класу Actor
+        :param name: Ім'я актора
+        :param birth_year: Рік народження актора (за замовчуванням None)
+        :param actor_id: Ідентифікатор актора (за замовчуванням None)
+        """
         self.id = actor_id
         self.name = name
         self.birth_year = birth_year
 
-    def save_to_db(self, cursor):
+    def save_to_db(self, cursor) -> None:
+        """
+        Зберігає або оновлює інформацію про актора у базі даних
+        :param cursor: Курсор бази даних для виконання SQL-запитів
+        """
         if self.id is None:
             cursor.execute(
                 'INSERT INTO actors (name, birth_year) VALUES (?, ?)',
@@ -51,7 +78,13 @@ class Actor:
             self.id = cursor.lastrowid
 
     @classmethod
-    def get_from_db(cls, cursor, actor_id):
+    def get_from_db(cls, cursor, actor_id: int) -> 'Actor':
+        """
+        Отримує інформацію про актора з бази даних за ідентифікатором
+        :param cursor: Курсор бази даних для виконання SQL-запитів
+        :param actor_id: Ідентифікатор актора
+        :return: Екземпляр класу Actor або None, якщо актор не знайдений
+        """
         cursor.execute('SELECT id, name, birth_year FROM actors WHERE id = ?', (actor_id,))
         row = cursor.fetchone()
         if row:
@@ -60,21 +93,31 @@ class Actor:
 
 
 class CinemaBaseApp:
-    def __init__(self, db_file='kinobaza.db'):
+    def __init__(self, db_file: str = 'kinobaza.db') -> None:
+        """
+        Ініціалізує екземпляр програми CinemaBaseApp
+        :param db_file: Назва файлу бази даних
+        """
         self.conn = sqlite3.connect(db_file)
         self.cursor = self.conn.cursor()
 
-    def run(self):
+    def run(self) -> None:
+        """
+        Запускає головний цикл роботи програми, що взаємодіє з користувачем
+        """
         while True:
             self.print_menu()
             choice = input("Виберіть дію: ")
             self.handle_menu_choice(choice)
             self.conn.commit()
 
-    def print_menu(self):
+    def print_menu(self) -> None:
+        """
+        Виводить головне меню програми
+        """
         print("\nМеню:")
-        print("1. Додати фільм")
-        print("2. Додати актора")
+        print("1. Додати, редагувати або видалити фільм")
+        print("2. Додати, редагувати або видалити актора")
         print("3. Показати всі фільми з акторами")
         print("4. Показати унікальні жанри")
         print("5. Показати кількість фільмів за жанром")
@@ -84,11 +127,15 @@ class CinemaBaseApp:
         print("9. Показати імена всіх акторів та назви всіх фільмів")
         print("0. Вихід")
 
-    def handle_menu_choice(self, choice):
+    def handle_menu_choice(self, choice: str) -> None:
+        """
+        Обробляє вибір користувача з головного меню
+        :param choice: Вибір користувача
+        """
         if choice == '1':
             self.handle_add_or_edit_movie()
         elif choice == '2':
-            self.handle_add_actor()
+            self.handle_add_or_edit_actor()
         elif choice == '3':
             list_movies_with_actors(self.cursor)
         elif choice == '4':
@@ -113,103 +160,3 @@ class CinemaBaseApp:
             exit()
         else:
             print("Невірний вибір. Спробуйте ще раз.")
-
-    def handle_add_or_edit_movie(self):
-        title = input("Введіть назву фільму: ")
-        rows = search_movie_by_title(self.cursor, title)
-        if rows:
-            print("Знайдені фільми:")
-            for idx, row in enumerate(rows, start=1):
-                print(f"{idx}. Фільм: {row[1]}, Рік: {row[2]}")
-            print("0. Додати новий фільм")
-            movie_choice = int(input("Введіть номер фільму для редагування або 0 для додавання нового: "))
-            if movie_choice != 0:
-                movie = Movie.get_from_db(self.cursor, rows[movie_choice - 1][0])
-                self.edit_movie(movie)
-            else:
-                release_year = int(input("Введіть рік випуску: "))
-                genre = input("Введіть жанр: ")
-                movie = Movie(title=title, release_year=release_year, genre=genre)
-                movie.save_to_db(self.cursor)
-        else:
-            release_year = int(input("Введіть рік випуску: "))
-            genre = input("Введіть жанр: ")
-            movie = Movie(title=title, release_year=release_year, genre=genre)
-            movie.save_to_db(self.cursor)
-
-        self.handle_add_actors_to_movie(movie)
-
-    def edit_movie(self, movie):
-        while True:
-            print("\nРедагувати фільм:")
-            print("1. Змінити назву фільму")
-            print("2. Змінити рік випуску")
-            print("3. Змінити жанр")
-            print("0. Повернутися до основного меню")
-
-            edit_choice = input("Виберіть дію: ")
-            if edit_choice == '1':
-                movie.title = input("Введіть нову назву фільму: ")
-                movie.save_to_db(self.cursor)
-                print(f"Назву фільму змінено на: {movie.title}")
-            elif edit_choice == '2':
-                movie.release_year = int(input("Введіть новий рік випуску: "))
-                movie.save_to_db(self.cursor)
-                print(f"Рік випуску фільму змінено на: {movie.release_year}")
-            elif edit_choice == '3':
-                movie.genre = input("Введіть новий жанр: ")
-                movie.save_to_db(self.cursor)
-                print(f"Жанр фільму змінено на: {movie.genre}")
-            elif edit_choice == '0':
-                break
-            else:
-                print("Невірний вибір. Спробуйте ще раз.")
-
-    def handle_add_actors_to_movie(self, movie):
-        while True:
-            print("\nДодати акторів до фільму:")
-            print("1. Вибрати актора з існуючих")
-            print("2. Додати нового актора")
-            print("0. Вихід")
-
-            actor_choice = input("Виберіть дію: ")
-            if actor_choice == '1':
-                rows = search_actor_by_name(self.cursor)
-                if not rows:
-                    print("Акторів з таким ім'ям не знайдено.")
-                    continue
-                actor_number = int(input("Введіть номер актора (або 0 для повернення): "))
-                if actor_number == 0:
-                    continue
-                else:
-                    actor = Actor.get_from_db(self.cursor, rows[actor_number - 1][0])
-                    link_actor_to_movie(self.cursor, movie.id, actor.id)
-            elif actor_choice == '2':
-                name = input("Введіть ім'я актора: ")
-                birth_year = int(input("Введіть рік народження актора: "))
-                actor = Actor(name=name, birth_year=birth_year)
-                actor.save_to_db(self.cursor)
-                link_actor_to_movie(self.cursor, movie.id, actor.id)
-                print(f"Доданий Актор: {actor.name}, Рік: {actor.birth_year}")
-            elif actor_choice == '0':
-                break
-            else:
-                print("Невірний вибір. Спробуйте ще раз.")
-
-    def handle_add_actor(self):
-        name = input("Введіть ім'я актора: ")
-        birth_year = int(input("Введіть рік народження актора: "))
-        actor = Actor(name=name, birth_year=birth_year)
-        actor.save_to_db(self.cursor)
-        print(f"Доданий Актор: {actor.name}, Рік: {actor.birth_year}")
-
-    def handle_list_movies_count_by_genre(self):
-        self.cursor.execute('SELECT genre, COUNT(*) FROM movies GROUP BY genre ORDER BY COUNT(*) DESC')
-        rows = self.cursor.fetchall()
-        for row in rows:
-            print(f"Жанр: {row[0]}, Кількість фільмів: {row[1]}")
-
-
-if __name__ == '__main__':
-    app = CinemaBaseApp()
-    app.run()
