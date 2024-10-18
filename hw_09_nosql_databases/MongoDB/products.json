@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Laptop",
+    "price": 3000.00,
+    "category": "Electronics",
+    "stock": 3
+  },
+  {
+    "name": "Tablet",
+    "price": 1000.00,
+    "category": "Electronics",
+    "stock": 5
+  },
+  {
+    "name": "Headphones",
+    "price": 200.00,
+    "category": "Electronics",
+    "stock": 2
+  },
+  {
+    "name": "Smartphone",
+    "price": 800.00,
+    "category": "Electronics",
+    "stock": 3
+  }
+]

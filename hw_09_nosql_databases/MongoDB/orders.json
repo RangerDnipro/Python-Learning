@@ -1,0 +1,40 @@
+[
+    {
+        "client": "John Doe",
+        "product_list": [
+            {
+                "name": "Laptop",
+                "quantity": 1
+            },
+            {
+                "name": "Smartphone",
+                "quantity": 1
+            },
+            {
+                "name": "Headphones",
+                "quantity": 1
+            }
+        ]
+    },
+    {
+        "client": "Jane Smith",
+        "product_list": [
+            {
+                "name": "Laptop",
+                "quantity": 1
+            },
+            {
+                "name": "Tablet",
+                "quantity": 1
+            },
+            {
+                "name": "Smartphone",
+                "quantity": 5
+            },
+            {
+                "name": "Headphones",
+                "quantity": 1
+            }
+        ]
+    }
+]
