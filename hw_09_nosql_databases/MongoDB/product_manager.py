@@ -2,8 +2,8 @@
 Модуль для управління продуктами
 """
 
-from pymongo import ASCENDING
 import json
+from pymongo import ASCENDING
 
 
 class ProductManager:
@@ -52,7 +52,7 @@ class ProductManager:
         :param file_path: Шлях до файлу з продуктами
         """
         try:
-            with open(file_path, 'r') as file:
+            with open(file_path, 'r', encoding='UTF-8') as file:
                 products = json.load(file)
                 for product in products:
                     self.add_product(
