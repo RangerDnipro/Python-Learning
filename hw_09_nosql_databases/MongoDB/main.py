@@ -2,10 +2,10 @@
 Основний модуль для запуску програми онлайн-магазину на основі MongoDB
 """
 
+from datetime import datetime
 from pymongo import MongoClient
 from product_manager import ProductManager
 from order_manager import OrderManager
-from datetime import datetime
 
 # Приклад використання
 store_db = MongoClient("mongodb://localhost:27017/")["online_store"]
