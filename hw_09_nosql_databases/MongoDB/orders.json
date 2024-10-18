@@ -1,40 +1,56 @@
 [
-    {
-        "client": "John Doe",
-        "product_list": [
-            {
-                "name": "Laptop",
-                "quantity": 1
-            },
-            {
-                "name": "Smartphone",
-                "quantity": 1
-            },
-            {
-                "name": "Headphones",
-                "quantity": 1
-            }
-        ]
-    },
-    {
-        "client": "Jane Smith",
-        "product_list": [
-            {
-                "name": "Laptop",
-                "quantity": 1
-            },
-            {
-                "name": "Tablet",
-                "quantity": 1
-            },
-            {
-                "name": "Smartphone",
-                "quantity": 5
-            },
-            {
-                "name": "Headphones",
-                "quantity": 1
-            }
-        ]
-    }
+  {
+    "client": "Дмитро Шевченко",
+    "product_list": [
+      {
+        "name": "Ноутбук",
+        "quantity": 1
+      },
+      {
+        "name": "Смартфон",
+        "quantity": 1
+      },
+      {
+        "name": "Навушники",
+        "quantity": 1
+      },
+      {
+        "name": "Олівець",
+        "quantity": 1
+      },
+      {
+        "name": "Блокнот",
+        "quantity": 1
+      }
+    ]
+  },
+  {
+    "client": "Надія Коваль",
+    "product_list": [
+      {
+        "name": "Ноутбук",
+        "quantity": 1
+      },
+      {
+        "name": "Планшет",
+        "quantity": 1
+      },
+      {
+        "name": "Смартфон",
+        "quantity": 5
+      },
+      {
+        "name": "Навушники",
+        "quantity": 1
+      },
+      {
+        "name": "Олівець",
+        "quantity": 1
+      },
+      {
+        "name": "Блокнот",
+        "quantity": 1
+      }
+    ]
+  }
 ]
