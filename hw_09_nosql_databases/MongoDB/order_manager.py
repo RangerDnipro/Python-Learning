@@ -23,22 +23,26 @@ class OrderManager:
         :param product_list: Список продуктів із кількістю у вигляді словників
         """
         total_amount = 0
+        actual_product_list = []
         for product in product_list:
             prod = self.product_manager.products.find_one({"name": product["name"]})
             if prod:
-                if prod["stock"] < product["quantity"]:
+                available_quantity = min(prod["stock"], product["quantity"])
+                if available_quantity > 0:
+                    total_amount += prod["price"] * available_quantity
+                    # Оновлення кількості продукту на складі
+                    self.product_manager.products.update_one(
+                        {"name": product["name"]}, {"$inc": {"stock": -available_quantity}})
+                    actual_product_list.append({"name": product["name"],
+                                                "quantity": available_quantity})
+                else:
                     print(f"Недостатньо товару {product['name']} на складі для замовлення {client}")
-                    continue
-                total_amount += prod["price"] * product["quantity"]
-                # Оновлення кількості продукту на складі
-                self.product_manager.products.update_one({"name": product["name"]},
-                                                         {"$inc": {"stock": -product["quantity"]}})
 
         if total_amount > 0:
             order = {
                 "order_number": self.orders.count_documents({}) + 1,
                 "client": client,
-                "product_list": product_list,
+                "product_list": actual_product_list,
                 "total_amount": total_amount,
                 "date": datetime.now()
             }
@@ -53,32 +57,39 @@ class OrderManager:
         date_threshold = datetime.now() - timedelta(days=days)
         return list(self.orders.find({"date": {"$gte": date_threshold}}))
 
-    def count_sold_products(self, start_date: datetime, end_date: datetime) -> int:
+    def count_sold_products(self, start_date: datetime,
+                            end_date: datetime) -> Dict[str, Dict[str, int]]:
         """
         Порахує загальну кількість проданих продуктів за певний період часу
         :param start_date: Початкова дата періоду
         :param end_date: Кінцева дата періоду
-        :return: Загальна кількість проданих продуктів
+        :return: Словник категорій з товарами та їх кількістю
         """
         orders = self.orders.find({"date": {"$gte": start_date, "$lte": end_date}})
-        total_sold = 0
+        sold_products = {}
         for order in orders:
             for product in order["product_list"]:
-                total_sold += product["quantity"]
-        return total_sold
+                product_info = self.product_manager.products.find_one({"name": product["name"]})
+                if product_info:
+                    category = product_info["category"]
+                    if category not in sold_products:
+                        sold_products[category] = {}
+                    if product["name"] not in sold_products[category]:
+                        sold_products[category][product["name"]] = 0
+                    sold_products[category][product["name"]] += product["quantity"]
+        return sold_products
 
-    def calculate_total_amount_for_client(self, client: str) -> float:
+    def calculate_total_amount_for_clients(self) -> Dict[str, float]:
         """
-        Використовує агрегацію для підрахунку загальної суми всіх замовлень клієнта
-        :param client: Ім'я клієнта
-        :return: Загальна сума всіх замовлень клієнта
+        Використовує агрегацію для підрахунку загальної суми всіх замовлень клієнтів
+        :return: Словник клієнтів з загальною сумою їх замовлень
         """
         pipeline = [
-            {"$match": {"client": client}},
             {"$group": {"_id": "$client", "total": {"$sum": "$total_amount"}}}
         ]
-        result = list(self.orders.aggregate(pipeline))
-        return result[0]["total"] if result else 0.0
+        results = list(self.orders.aggregate(pipeline))
+        client_totals = {result["_id"]: result["total"] for result in results}
+        return client_totals
 
     def load_orders_from_file(self, file_path: str):
         """
