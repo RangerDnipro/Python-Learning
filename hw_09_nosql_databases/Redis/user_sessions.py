@@ -1,12 +1,12 @@
 """
-Модуль реалізує простий менеджер сесій користувачів для веб-додатку за допомогою Redis.
+Модуль реалізує простий менеджер сесій користувачів для веб-додатку за допомогою Redis
 Він дозволяє створювати, читати, оновлювати та видаляти сесії користувачів, а також
-налаштовує TTL для автоматичного видалення неактивних сесій через 30 хвилин.
+налаштовує TTL для автоматичного видалення неактивних сесій через 30 хвилин
 """
 
-import redis
 import time
 from typing import Optional
+import redis
 
 # Підключення до Redis
 redis_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_responses=True)
@@ -14,7 +14,7 @@ redis_client = redis.StrictRedis(host='localhost', port=6379, db=0, decode_respo
 
 class UserSessionManager:
     """
-    Клас для управління сесіями користувачів, використовуючи Redis для зберігання стану користувачів
+    Клас для управління сесіями користувачів
     """
     # Час життя сесії в секундах (30 хвилин)
     SESSION_TTL_SECONDS = 30 * 60
@@ -75,25 +75,25 @@ class UserSessionManager:
 
 # Приклад використання
 if __name__ == "__main__":
-    user_id = "user_123"
-    session_token = "abc123token"
-    login_time = time.time()
+    USER_ID = "user_123"
+    SESSION_TOKEN = "abc123token"
+    LOGIN_TIME = time.time()
 
     # Створення нової сесії
-    UserSessionManager.create_session(user_id, session_token, login_time)
+    UserSessionManager.create_session(USER_ID, SESSION_TOKEN, LOGIN_TIME)
     print("Сесія створена.")
 
     # Отримання сесії
-    session = UserSessionManager.get_session(user_id)
+    session = UserSessionManager.get_session(USER_ID)
     if session:
         print("Отримана сесія:", session)
     else:
         print("Сесія не знайдена.")
 
     # Оновлення часу останньої активності
-    UserSessionManager.update_last_activity(user_id)
+    UserSessionManager.update_last_activity(USER_ID)
     print("Час останньої активності оновлено.")
 
     # Видалення сесії
-    UserSessionManager.delete_session(user_id)
+    UserSessionManager.delete_session(USER_ID)
     print("Сесія видалена.")
