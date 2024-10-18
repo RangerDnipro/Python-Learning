@@ -3,7 +3,7 @@
 """
 
 from datetime import datetime, timedelta
-from uuid import uuid4  # Імпорт функції uuid4 для генерації UUID
+from uuid import uuid4
 from contextlib import contextmanager
 from cassandra.cluster import Cluster
 from cassandra.query import SimpleStatement, BatchStatement
@@ -19,7 +19,8 @@ def cassandra_session():
     cluster = Cluster(['127.0.0.1'])
     session = cluster.connect()
     try:
-        session.set_keyspace('event_logs')  # Встановлення keyspace при кожному підключенні
+        # Встановлення keyspace при кожному підключенні
+        session.set_keyspace('event_logs')
         yield session
     finally:
         session.shutdown()
