@@ -86,7 +86,7 @@ class OrderManager:
         :param file_path: Шлях до файлу з замовленнями
         """
         try:
-            with open(file_path, 'r') as file:
+            with open(file_path, 'r', encoding='UTF-8') as file:
                 orders = json.load(file)
                 for order in orders:
                     self.add_order(
