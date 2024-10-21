@@ -1,4 +1,4 @@
-# Home work 10. Multithreading vs multiprocessing
+# ДЗ 10. Multithreading vs multiprocessing
 
 # Задача 1: завантаження файлів із мережі
 
