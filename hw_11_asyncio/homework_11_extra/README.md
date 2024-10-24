@@ -140,7 +140,7 @@ async def run_transaction():
     async with aiosqlite.connect('example.db') as db:
         try:
             await db.execute('BEGIN')
-            await db.execute('INSERT INTO users(name) VALUES(?)', ('Ім'я користувача',))
+            await db.execute('INSERT INTO users(name) VALUES(?)', ("Ім'я користувача",))
             await db.execute('INSERT INTO orders(user_id, amount) VALUES(?, ?)', (1, 100))
             await db.commit()
         except Exception as e:
