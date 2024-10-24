@@ -1,155 +1,159 @@
-# Інтеграція асинхронного коду у синхронний проект на Python
+# Як інтегрувати асинхронний код у вже існуючий синхронний проект на Python
 
-Щоб інтегрувати асинхронний код у вже існуючий синхронний проект на Python, потрібно поступово адаптувати функціонал, зберігаючи баланс між старими та новими частинами. 
+Щоб додати новий асинхронний код до старого проекту, потрібно поступово адаптувати функціонал, зберігаючи баланс між старими та новими частинами.
 
-## Основні підходи інтеграції асинхронного коду
+## Як додати новий асинхронний код
 
-### 1. Перехід до використання asyncio та event loop
-Можна додати event loop у синхронний код і можна перетворювати деякі блокуючі функції на асинхронні. Якщо синхронні частини викликають асинхронний код, можна використовувати `asyncio.run()` або `loop.run_until_complete()`, щоб забезпечити коректне виконання. 
+1. **Почати використовувати asyncio та event loop**
 
-#### Приклад використання asyncio:
+   Можна зробити так, щоб старий код і новий асинхронний код працювали разом. Якщо потрібно виконати новий код, можна використовувати спеціальні функції, як `asyncio.run()`.
 
-```python
-import asyncio
+   **Приклад:**
 
-def sync_function():
-    print("Це синхронна функція")
+   ```python
+   import asyncio
 
-async def async_function():
-    loop = asyncio.get_event_loop()
-    await loop.run_in_executor(None, sync_function)
+   def sync_function():
+       print("Це синхронна функція")
 
-if __name__ == "__main__":
-    asyncio.run(async_function())
-```
+   async def async_function():
+       loop = asyncio.get_event_loop()
+       await loop.run_in_executor(None, sync_function)
 
-### 2. Мікс синхронних та асинхронних функцій
-Для існуючого коду можна залишити синхронні функції, але використовувати асинхронні для нових задач, які потребують неблокуючого виконання (наприклад, запити до API або тривалі обчислення). 
+   if __name__ == "__main__":
+       asyncio.run(async_function())
+   ```
 
-#### Приклад:
+2. **Змішування старого і нового коду**
 
-```python
-import asyncio
-import time
+   Можна залишити старий код і додати асинхронні задачі для нових функцій, які потребують неблокуючого виконання (наприклад, запити до API або тривалі обчислення). Це допоможе зробити виконання швидшим.
 
-def sync_function():
-    print("Це синхронна функція")
-    time.sleep(2)
-    print("Синхронна функція завершена")
+   **Приклад:**
 
-async def async_function():
-    print("Це асинхронна функція")
-    await asyncio.sleep(1)
-    print("Асинхронна функція завершена")
+   ```python
+   import asyncio
+   import time
 
-async def main():
-    loop = asyncio.get_event_loop()
-    # Виклик синхронної функції в асинхронному контексті
-    await loop.run_in_executor(None, sync_function)
-    # Виклик асинхронної функції
-    await async_function()
+   def sync_function():
+       print("Це синхронна функція")
+       time.sleep(2)
+       print("Синхронна функція завершена")
 
-if __name__ == "__main__":
-    asyncio.run(main())
-```
+   async def async_function():
+       print("Це асинхронна функція")
+       await asyncio.sleep(1)
+       print("Асинхронна функція завершена")
 
-### 3. Використання окремих потоків або процесів
-Якщо є частини, що залишаються синхронними, їх можна відокремити в окремий потік або процес. Наприклад, для синхронних операцій з базою даних, в той час як асинхронні функції виконуються паралельно. Можна використовувати модулі `threading` або `multiprocessing` для реалізації такого підходу. 
+   async def main():
+       loop = asyncio.get_event_loop()
+       await loop.run_in_executor(None, sync_function)
+       await async_function()
 
-#### Приклад використання потоків:
+   if __name__ == "__main__":
+       asyncio.run(main())
+   ```
 
-```python
-import threading
-import time
+3. **Використання окремих потоків або процесів**
 
-def sync_function():
-    print("Це синхронна функція")
-    time.sleep(2)
-    print("Синхронна функція завершена")
+   Якщо старий код не можна змінити, його можна запускати в окремому потоці або процесі. Це дозволить йому працювати одночасно з новим асинхронним кодом.
 
-def main():
-    thread = threading.Thread(target=sync_function)
-    thread.start()
-    print("Паралельне виконання триває...")
-    thread.join()
+   **Приклад з потоками:**
 
-if __name__ == "__main__":
-    main()
-```
+   ```python
+   import threading
+   import time
 
-#### Приклад використання процесів:
+   def sync_function():
+       print("Це синхронна функція")
+       time.sleep(2)
+       print("Синхронна функція завершена")
 
-```python
-import multiprocessing
-import time
+   def main():
+       thread = threading.Thread(target=sync_function)
+       thread.start()
+       print("\nПаралельне виконання триває...")
+       thread.join()
 
-def sync_function():
-    print("Це синхронна функція")
-    time.sleep(2)
-    print("Синхронна функція завершена")
+   if __name__ == "__main__":
+       main()
+   ```
 
-def main():
-    process = multiprocessing.Process(target=sync_function)
-    process.start()
-    print("Паралельне виконання триває...")
-    process.join()
+   **Приклад з процесами:**
 
-if __name__ == "__main__":
-    main()
-```
+   ```python
+   import multiprocessing
+   import time
+
+   def sync_function():
+       print("Це синхронна функція")
+       time.sleep(2)
+       print("Синхронна функція завершена")
+
+   def main():
+       process = multiprocessing.Process(target=sync_function)
+       process.start()
+       print("Паралельне виконання триває...")
+       process.join()
+
+   if __name__ == "__main__":
+       main()
+   ```
 
 # Підводні камені використання асинхронних бібліотек при роботі з базами даних
 
-## 1. Підтримка драйверами бази даних
-Не всі бібліотеки баз даних підтримують асинхронні операції. Потрібно використовувати асинхронні клієнти, такі як `aiomysql` (для MySQL), `asyncpg` (для PostgreSQL) або `motor` (для MongoDB). Наприклад, для PostgreSQL можна використовувати `asyncpg` для асинхронного виконання запитів, а для MySQL — `aiomysql`. Це додає обмеження на вибір інструментів.
+1. **Бібліотеки для роботи з базами даних**
 
-## 2. Блокування операцій
-Навіть асинхронні бібліотеки можуть інколи блокувати event loop при виконанні певних важких запитів, що може призвести до затримок. Важливо враховувати цей аспект та оптимізувати запити або використовувати пул потоків для розвантаження. Рекомендується використовувати `ThreadPoolExecutor` з модуля `concurrent.futures`, щоб виконувати блокуючі функції в окремих потоках і мінімізувати блокування event loop. 
+   Не всі бібліотеки баз даних підтримують асинхронний код. Можна використовувати спеціальні бібліотеки, як `aiomysql` або `asyncpg`, які зроблені для асинхронного використання.
 
-### Приклад:
+2. **Блокування коду**
 
-```python
-import asyncio
-from concurrent.futures import ThreadPoolExecutor
+   Навіть асинхронні бібліотеки іноді можуть блокувати код, роблячи його повільнішим. Можна використовувати спеціальні інструменти, щоб уникнути блокування та прискорити виконання.
 
-def blocking_function():
-    # Симуляція важкої операції
-    import time
-    time.sleep(2)
-    print("Блокуюча операція завершена")
+   **Приклад:**
 
-async def main():
-    loop = asyncio.get_event_loop()
-    with ThreadPoolExecutor() as executor:
-        await loop.run_in_executor(executor, blocking_function)
+   ```python
+   import asyncio
+   import time
+   from concurrent.futures import ThreadPoolExecutor
 
-if __name__ == "__main__":
-    asyncio.run(main())
-```
+   def blocking_function():
+       time.sleep(2)
+       print("Блокуюча операція завершена")
 
-## 3. Робота з транзакціями
-Асинхронне виконання транзакцій може бути складнішим через необхідність збереження цілісності даних. Важливо забезпечити коректне завершення або скасування транзакцій у випадку асинхронного збою. 
+   async def main():
+       loop = asyncio.get_event_loop()
+       with ThreadPoolExecutor() as executor:
+           await loop.run_in_executor(executor, blocking_function)
 
-### Приклад використання `asyncpg` для PostgreSQL:
+   if __name__ == "__main__":
+       asyncio.run(main())
+   ```
 
-```python
-import asyncpg
-import asyncio
+3. **Робота з транзакціями**
 
-async def run_transaction():
-    conn = await asyncpg.connect(user='user', password='password', database='dbname', host='127.0.0.1')
-    try:
-        async with conn.transaction():
-            await conn.execute('INSERT INTO users(name) VALUES($1)', 'Ім'я користувача')
-            await conn.execute('INSERT INTO orders(user_id, amount) VALUES($1, $2)', 1, 100)
-    except Exception as e:
-        print(f"Помилка при виконанні транзакції: {e}")
-    finally:
-        await conn.close()
+   Коли вносяться зміни до бази даних, важливо, щоб ці зміни виконувалися правильно, навіть якщо щось піде не так. Треба перевіряти, щоб код міг скасувати зміни, якщо сталася помилка.
 
-if __name__ == "__main__":
-    asyncio.run(run_transaction())
-```
+   **Приклад з SQLite:**
 
-## 4. Змішування синхронних та асинхронних викликів
-Це може призводити до непередбачуваних блокувань. Наприклад, якщо викликати синхронну функцію всередині асинхронної, це потенційно блокує весь event loop. Треба уникати змішування синхронних і асинхронних викликів або використовувати обгортки, такі як `loop.run_in_executor()`, для безпечного виконання синхронних функцій в асинхронному контексті.
+   ```python
+   import aiosqlite
+   import asyncio
+
+   async def run_transaction():
+       async with aiosqlite.connect('example.db') as db:
+           try:
+               await db.execute('BEGIN')
+               await db.execute('INSERT INTO users(name) VALUES(?)', ("Ім'я користувача",))
+               await db.execute('INSERT INTO orders(user_id, amount) VALUES(?, ?)', (1, 100))
+               await db.commit()
+           except Exception as e:
+               await db.rollback()
+               print(f"Помилка при виконанні транзакції: {e}")
+
+   if __name__ == "__main__":
+       asyncio.run(run_transaction())
+   ```
+
+4. **Змішування старого і нового коду**
+
+   Змішування старого синхронного та нового асинхронного коду може бути складним. Старий код може зупинити виконання нового асинхронного коду, якщо вони не працюють правильно разом. Щоб уникнути цього, можна використовувати спеціальні обгортки або інструменти, щоб вони могли працювати паралельно без перешкод.
