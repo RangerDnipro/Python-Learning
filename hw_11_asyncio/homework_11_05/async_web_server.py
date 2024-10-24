@@ -41,7 +41,7 @@ async def init_app() -> web.Application:
 
 async def make_requests() -> None:
     """
-    Створюємо кілька запитів до маршрутів / і /slow одночасно та виводить відповідні повідомлення
+    Створює кілька запитів до маршрутів / і /slow одночасно та виводить відповідні повідомлення.
     """
     async with ClientSession() as session:
         tasks = []
@@ -49,8 +49,9 @@ async def make_requests() -> None:
             tasks.append(session.get('http://localhost:8080/'))
             tasks.append(session.get('http://localhost:8080/slow'))
 
-        responses = await asyncio.gather(*tasks)
-        for response in responses:
+        # Виконуємо запити та обробляємо їх одразу після завершення
+        for task in asyncio.as_completed(tasks):
+            response = await task
             text = await response.text()
             print(f"Отримано відповідь: {text}")
 
