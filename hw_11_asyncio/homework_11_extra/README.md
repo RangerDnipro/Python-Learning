@@ -130,22 +130,22 @@ if __name__ == "__main__":
 ## 3. Робота з транзакціями
 Асинхронне виконання транзакцій може бути складнішим через необхідність збереження цілісності даних. Важливо забезпечити коректне завершення або скасування транзакцій у випадку асинхронного збою. 
 
-### Приклад використання `asyncpg` для PostgreSQL:
+### Приклад використання SQLite для транзакцій:
 
 ```python
-import asyncpg
+import aiosqlite
 import asyncio
 
 async def run_transaction():
-    conn = await asyncpg.connect(user='user', password='password', database='dbname', host='127.0.0.1')
-    try:
-        async with conn.transaction():
-            await conn.execute('INSERT INTO users(name) VALUES($1)', 'Ім'я користувача')
-            await conn.execute('INSERT INTO orders(user_id, amount) VALUES($1, $2)', 1, 100)
-    except Exception as e:
-        print(f"Помилка при виконанні транзакції: {e}")
-    finally:
-        await conn.close()
+    async with aiosqlite.connect('example.db') as db:
+        try:
+            await db.execute('BEGIN')
+            await db.execute('INSERT INTO users(name) VALUES(?)', ('Ім'я користувача',))
+            await db.execute('INSERT INTO orders(user_id, amount) VALUES(?, ?)', (1, 100))
+            await db.commit()
+        except Exception as e:
+            await db.rollback()
+            print(f"Помилка при виконанні транзакції: {e}")
 
 if __name__ == "__main__":
     asyncio.run(run_transaction())
