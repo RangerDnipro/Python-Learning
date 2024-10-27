@@ -8,7 +8,7 @@ import re
 
 def remove_html_tags(text: str) -> str:
     """
-    Видаляємо всі HTML-теги з тексту, окрім хеш-тегів
+    Видаляє всі HTML-теги з тексту, окрім хеш-тегів
     :param text: Текст, що може містити HTML-теги
     :return: Текст без HTML-тегів
     """
@@ -23,7 +23,7 @@ def remove_html_tags(text: str) -> str:
 
 def extract_hashtags(text: str) -> list[str]:
     """
-    Видобуваємо всі хеш-теги з тексту
+    Видобуває всі хеш-теги з тексту
     :param text: Текст, що може містити хеш-теги
     :return: Список хеш-тегів
     """
@@ -34,7 +34,7 @@ def extract_hashtags(text: str) -> list[str]:
 
 def extract_ip_addresses(text: str) -> list[str]:
     """
-    Знаходимо всі IPv4-адреси в тексті
+    Знаходить всі IPv4-адреси в тексті
     :param text: Текст, що може містити IP-адреси
     :return: Список IPv4-адрес
     """
@@ -48,7 +48,7 @@ def extract_ip_addresses(text: str) -> list[str]:
 
 def find_pattern(text: str) -> list[str]:
     """
-    Перевіряємо, чи міститься у тексті рядок формату AB12CD34
+    Перевіряє, чи міститься у тексті рядок формату AB12CD34
     :param text: Текст, що може містити рядки заданого формату
     :return: Список рядків, що відповідають формату AB12CD34
     """
@@ -59,12 +59,17 @@ def find_pattern(text: str) -> list[str]:
 
 def reformat_dates(text: str) -> str:
     """
-    Знаходимо всі дати у форматі DD/MM/YYYY і перетворюємо їх у формат YYYY-MM-DD
+    Знаходить всі дати у форматі DD/MM/YYYY і перетворює їх у формат YYYY-MM-DD
     :param text: Текст, що може містити дати у форматі DD/MM/YYYY
     :return: Текст з датами у форматі YYYY-MM-DD
     """
 
     def replace_date(match: re.Match) -> str:
+        """
+        Перетворюємо дату з формату DD/MM/YYYY у формат YYYY-MM-DD
+        :param match: Об'єкт відповідності, що містить дату у форматі DD/MM/YYYY
+        :return: Дата у форматі YYYY-MM-DD
+        """
         day, month, year = match.groups()
         reformatted_date = f"{year}-{month}-{day}"
         print(f"Дату {match.group()} виправлено на {reformatted_date}")
@@ -92,18 +97,18 @@ if __name__ == "__main__":
 
     print("\nРезультат збережено у файл example.txt")
 
-    # Читання очищеного вмісту з файлу example.txt
+    # Читання вмісту з файлу example.txt
     with open('example.txt', 'r', encoding='utf-8') as file:
-        clean_content = file.read()
+        content = file.read()
 
     # Видобування хеш-тегів з тексту
-    hashtags = extract_hashtags(clean_content)
+    hashtags = extract_hashtags(content)
     print("\nЗнайдені хеш-теги:", *hashtags, sep='\n')
 
     # Видобування IP-адрес з тексту
-    ip_addresses = extract_ip_addresses(clean_content)
+    ip_addresses = extract_ip_addresses(content)
     print("\nЗнайдені IP-адреси:", *ip_addresses, sep='\n')
 
     # Перевірка на наявність рядків формату AB12CD34
-    pattern_matches = find_pattern(clean_content)
+    pattern_matches = find_pattern(content)
     print("\nЗнайдені рядки формату AB12CD34:", *pattern_matches, sep='\n')
