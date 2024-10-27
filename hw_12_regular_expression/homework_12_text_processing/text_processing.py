@@ -8,7 +8,7 @@ import re
 
 def remove_html_tags(text: str) -> str:
     """
-    Видаляє всі HTML-теги з тексту, окрім хеш-тегів
+    Видаляємо всі HTML-теги з тексту, окрім хеш-тегів
     :param text: Текст, що може містити HTML-теги
     :return: Текст без HTML-тегів
     """
@@ -23,7 +23,7 @@ def remove_html_tags(text: str) -> str:
 
 def extract_hashtags(text: str) -> list[str]:
     """
-    Видобуває всі хеш-теги з тексту
+    Видобуваємо всі хеш-теги з тексту
     :param text: Текст, що може містити хеш-теги
     :return: Список хеш-тегів
     """
@@ -34,7 +34,7 @@ def extract_hashtags(text: str) -> list[str]:
 
 def extract_ip_addresses(text: str) -> list[str]:
     """
-    Знаходить всі IPv4-адреси в тексті
+    Знаходимо всі IPv4-адреси в тексті
     :param text: Текст, що може містити IP-адреси
     :return: Список IPv4-адрес
     """
@@ -48,7 +48,7 @@ def extract_ip_addresses(text: str) -> list[str]:
 
 def find_pattern(text: str) -> list[str]:
     """
-    Перевіряє, чи міститься у тексті рядок формату AB12CD34
+    Перевіряємо, чи міститься у тексті рядок формату AB12CD34
     :param text: Текст, що може містити рядки заданого формату
     :return: Список рядків, що відповідають формату AB12CD34
     """
@@ -59,7 +59,7 @@ def find_pattern(text: str) -> list[str]:
 
 def reformat_dates(text: str) -> str:
     """
-    Знаходить всі дати у форматі DD/MM/YYYY і перетворює їх у формат YYYY-MM-DD
+    Знаходимо всі дати у форматі DD/MM/YYYY і перетворюємо їх у формат YYYY-MM-DD
     :param text: Текст, що може містити дати у форматі DD/MM/YYYY
     :return: Текст з датами у форматі YYYY-MM-DD
     """
