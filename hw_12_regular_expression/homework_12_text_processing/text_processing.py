@@ -65,6 +65,11 @@ def reformat_dates(text: str) -> str:
     """
 
     def replace_date(match: re.Match) -> str:
+        """
+        Перетворюємо дату з формату DD/MM/YYYY у формат YYYY-MM-DD
+        :param match: Об'єкт відповідності, що містить дату у форматі DD/MM/YYYY
+        :return: Дата у форматі YYYY-MM-DD
+        """
         day, month, year = match.groups()
         reformatted_date = f"{year}-{month}-{day}"
         print(f"Дату {match.group()} виправлено на {reformatted_date}")
@@ -92,18 +97,18 @@ if __name__ == "__main__":
 
     print("\nРезультат збережено у файл example.txt")
 
-    # Читання очищеного вмісту з файлу example.txt
+    # Читання вмісту з файлу example.txt
     with open('example.txt', 'r', encoding='utf-8') as file:
-        clean_content = file.read()
+        content = file.read()
 
     # Видобування хеш-тегів з тексту
-    hashtags = extract_hashtags(clean_content)
+    hashtags = extract_hashtags(content)
     print("\nЗнайдені хеш-теги:", *hashtags, sep='\n')
 
     # Видобування IP-адрес з тексту
-    ip_addresses = extract_ip_addresses(clean_content)
+    ip_addresses = extract_ip_addresses(content)
     print("\nЗнайдені IP-адреси:", *ip_addresses, sep='\n')
 
     # Перевірка на наявність рядків формату AB12CD34
-    pattern_matches = find_pattern(clean_content)
+    pattern_matches = find_pattern(content)
     print("\nЗнайдені рядки формату AB12CD34:", *pattern_matches, sep='\n')
