@@ -5,6 +5,7 @@
 import csv
 
 
+# pylint: disable=too-few-public-methods
 class Storage:
     """
     Клас для збереження зібраних новин у файл формату CSV
