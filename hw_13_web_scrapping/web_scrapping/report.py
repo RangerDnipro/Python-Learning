@@ -5,6 +5,7 @@
 import pandas as pd
 
 
+# pylint: disable=too-few-public-methods
 class Report:
     """
     Клас для генерації звіту на основі новин
