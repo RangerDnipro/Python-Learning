@@ -23,6 +23,7 @@ class Report:
         df = pd.DataFrame(data)
         if 'date' in df.columns:
             report = df['date'].value_counts().sort_index()
+            print("\nНа відповідну дату є така кількість новин:")
             print(report)
         else:
             print("Немає даних для створення звіту")
