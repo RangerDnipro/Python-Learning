@@ -13,7 +13,7 @@ class Network:
 
     def __init__(self, base_url: str):
         """
-        Ініціалізує об'єкт класу з базовим URL.
+        Ініціалізує об'єкт класу з базовим URL
         :param base_url: URL сторінки
         """
         self.base_url = base_url
@@ -22,8 +22,8 @@ class Network:
     def get_page(self, url: str) -> BeautifulSoup:
         """
         Завантажує HTML-сторінку за URL та повертає BeautifulSoup-об'єкт
-        :param url: URL сторінки, яку необхідно завантажити.
-        :return: BeautifulSoup-об'єкт, що представляє HTML-код сторінки. Повертає None у разі помилки.
+        :param url: URL сторінки, яку необхідно завантажити
+        :return: BeautifulSoup-об'єкт, що представляє HTML-код. Повертає None у разі помилки
         """
         try:
             response = self.session.get(url)
