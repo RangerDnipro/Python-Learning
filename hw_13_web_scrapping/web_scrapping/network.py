@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
+# pylint: disable=too-few-public-methods
 class Network:
     """
     Клас для завантаження HTML-коду сторінки з новинного сайту
