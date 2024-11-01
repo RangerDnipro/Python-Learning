@@ -7,12 +7,22 @@ from bs4 import BeautifulSoup
 
 class Parser:
     """
-    Клас для парсингу новин зі сторінок.
+    Клас для парсингу новин зі сторінок
     """
+
     def __init__(self, network):
+        """
+        Ініціалізує Parser з об'єктом Network
+        :param network: Об'єкт Network для завантаження сторінок
+        """
         self.network = network
 
     def get_summary_from_link(self, link: str) -> str:
+        """
+        Отримує короткий опис (summary) зі сторінки новини за її посиланням
+        :param link: URL сторінки новини
+        :return: Короткий опис новини або 'N/A', якщо не вдалося знайти
+        """
         soup = self.network.get_page(link)
         if soup is None:
             return 'N/A'
@@ -21,6 +31,11 @@ class Parser:
         return meta_tag['content'].strip() if meta_tag and meta_tag.has_attr('content') else 'N/A'
 
     def parse_news(self, soup: BeautifulSoup) -> list[dict[str, str]]:
+        """
+        Парсить HTML-код сторінки для витягання новин
+        :param soup: BeautifulSoup об'єкт з HTML-кодом сторінки
+        :return: Список словників, кожен з яких містить інформацію про новину
+        """
         news_list = []
         if soup is None:
             return news_list
