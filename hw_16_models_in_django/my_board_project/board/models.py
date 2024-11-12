@@ -66,10 +66,13 @@ class Ad(models.Model):
             self.is_active = False
 
     def save(self, *args, **kwargs):
-        # Деактивуємо оголошення, якщо минуло більше ніж 30 днів
+        # Якщо поле created_at не встановлене, використовуємо поточний час
+        if self.created_at is None:
+            self.created_at = timezone.now()
+
+        # Перевірка дати для автоматичної деактивації
         if self.created_at < timezone.now() - timedelta(days=30):
             self.is_active = False
-        super().save(*args, **kwargs)
 
     def __str__(self) -> str:
         return f"{self.title} - {self.price} грн"
