@@ -1,0 +1,18 @@
+{% extends 'board/base.html' %}
+
+{% block title %}Активні оголошення у категорії {{ category }}{% endblock %}
+
+{% block content %}
+    <h1>Активні оголошення у категорії "{{ category }}"</h1>
+    {% if active_ads %}
+        <ul class="list-group">
+            {% for ad in active_ads %}
+                <li class="list-group-item">
+                    <strong>{{ ad.title }}</strong> - {{ ad.price }} грн
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Немає активних оголошень у цій категорії.</p>
+    {% endif %}
+{% endblock %}
