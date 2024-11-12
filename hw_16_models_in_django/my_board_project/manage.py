@@ -3,6 +3,9 @@
 import os
 import sys
 
+# Додаємо кореневу папку проєкту до Python-шляху
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 def main():
     """Run administrative tasks."""
