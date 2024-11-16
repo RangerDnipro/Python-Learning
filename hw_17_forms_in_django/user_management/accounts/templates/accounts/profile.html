@@ -1,0 +1,41 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+{% block title %}Профіль користувача{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1>Профіль користувача</h1>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-3">
+                    {% if user.userprofile.avatar %}
+                        <img src="{{ user.userprofile.avatar.url }}" alt="Аватар користувача" class="img-fluid rounded">
+                    {% else %}
+                        <img src="{% static 'accounts/default-avatar.png' %}" alt="Аватар за замовчуванням" class="img-fluid rounded">
+                    {% endif %}
+                </div>
+                <div class="col-md-9">
+                    <p><strong>Ім'я користувача:</strong> {{ user.username }}</p>
+                    <p><strong>Email:</strong> {{ user.email }}</p>
+                    <p><strong>Біографія:</strong> {{ user.userprofile.bio }}</p>
+                    <p><strong>Дата народження:</strong> {{ user.userprofile.birth_date }}</p>
+                    <p><strong>Місце проживання:</strong> {{ user.userprofile.location }}</p>
+                </div>
+            </div>
+
+            <div class="mt-3">
+                {% if user == request.user %}
+                    <!-- Кнопки для власника профілю -->
+                    <a href="{% url 'edit_profile' %}" class="btn btn-primary">Редагувати Профіль</a>
+                    <a href="{% url 'change_password' %}" class="btn btn-secondary">Змінити Пароль</a>
+                    <a href="{% url 'delete_profile' %}" class="btn btn-danger">Видалити Профіль</a>
+                {% else %}
+                    <!-- Кнопка повернення для перегляду іншого профілю -->
+                    <a href="{% url 'user_list' %}" class="btn btn-secondary">Повернутись до списку користувачів</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
