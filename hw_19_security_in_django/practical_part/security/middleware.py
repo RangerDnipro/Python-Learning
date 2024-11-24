@@ -4,6 +4,7 @@ Middleware для логування запитів та обробки поми
 
 import logging
 
+from django.http import HttpResponseForbidden
 from django.http import HttpResponseNotAllowed
 from django.utils.deprecation import MiddlewareMixin
 
@@ -46,4 +47,19 @@ class EnforcePostOnlyMiddleware:
         # Якщо це шлях /login/ і метод не POST, то відмовити
         if request.path == '/login/' and request.method != 'POST':
             return HttpResponseNotAllowed(['POST'])
+        return self.get_response(request)
+
+
+class UserAgentMiddleware:
+    """
+    Middleware для блокування старих або підозрілих User-Agent.
+    """
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        user_agent = request.META.get('HTTP_USER_AGENT', '').lower()
+        if 'msie 8.0' in user_agent or 'mozilla/4.0' in user_agent:
+            return HttpResponseForbidden('Ваш браузер застарів або не підтримується.')
         return self.get_response(request)
