@@ -1,0 +1,40 @@
+{% extends 'users/base.html' %}
+
+{% block title %}Головна сторінка{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center">Ласкаво просимо на головну сторінку!</h1>
+    {% if user.is_authenticated %}
+        <p class="text-center">Вітаємо, {{ user.username }}!</p>
+        <hr>
+
+        <h2>Додайте коментар:</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Надіслати коментар</button>
+        </form>
+    {% else %}
+        <p class="text-center">Будь ласка, увійдіть або зареєструйтеся для доступу до всіх можливостей сайту.</p>
+    {% endif %}
+
+    <hr>
+
+    <h2>Коментарі:</h2>
+    {% if comments %}
+        {% for comment in comments %}
+            <div class="card mb-3">
+                <div class="card-body">
+                    <p class="card-text">{{ comment.text }}</p>
+                    <footer class="blockquote-footer">
+                        <small>Від {{ comment.user.username }} о {{ comment.created_at }}</small>
+                    </footer>
+                </div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Ще немає коментарів. Станьте першим, хто прокоментує!</p>
+    {% endif %}
+</div>
+{% endblock %}
