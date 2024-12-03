@@ -1,0 +1,22 @@
+{% extends 'board/base.html' %}
+
+{% block title %}Мої оголошення{% endblock %}
+
+{% block content %}
+    <h1>Мої оголошення</h1>
+    {% if ads %}
+        <ul class="list-group">
+            {% for ad in ads %}
+                <li class="list-group-item">
+                    <strong>{{ ad.title }}</strong> - {{ ad.price }} грн
+                    <br>{{ ad.short_description }}
+                    <br>
+                    <a href="{% url 'edit_ad' ad.pk %}" class="btn btn-sm btn-warning mt-2">Редагувати</a>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>У вас немає створених оголошень.</p>
+    {% endif %}
+    <a href="{% url 'create_ad' %}" class="btn btn-primary mt-4">Створити нове оголошення</a>
+{% endblock %}

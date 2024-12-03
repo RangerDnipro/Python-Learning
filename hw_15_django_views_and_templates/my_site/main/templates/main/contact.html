@@ -1,0 +1,13 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Контакти{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center mt-4">
+    <h1 class="display-4">Контакти</h1>
+    <p class="lead"><strong>Адреса:</strong> {{ address|default:"Немає адреси" }}</p>
+    <p class="lead"><strong>Телефон:</strong> {{ phone|default:"Немає телефону" }}</p>
+    <p class="lead"><strong>Email:</strong> {{ email|default:"Немає електронної пошти" }}</p>
+    <p class="lead"><strong>Чи є контактні дані?</strong> {{ address|yesno:"Так,Ні" }}</p>
+</div>
+{% endblock %}

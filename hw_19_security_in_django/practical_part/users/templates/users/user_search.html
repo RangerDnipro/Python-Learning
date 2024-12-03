@@ -1,0 +1,28 @@
+{% extends 'users/base.html' %}
+
+{% block title %}Пошук користувачів{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Пошук користувачів за іменем</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Пошук</button>
+    </form>
+
+    {% if users is not None %}
+        <hr>
+        <h3>Результати пошуку:</h3>
+        {% if users %}
+            <ul>
+                {% for user in users %}
+                    <li>Ім'я користувача: {{ user.0 }}, Електронна пошта: {{ user.1 }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Немає користувачів із таким іменем.</p>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

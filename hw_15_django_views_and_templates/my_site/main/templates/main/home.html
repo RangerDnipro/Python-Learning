@@ -1,0 +1,14 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Головна{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center mt-4">
+    <h1 class="display-4">Ласкаво просимо на наш сайт!</h1>
+    <p class="lead">Ми надаємо інноваційні рішення для вашого бізнесу та допомагаємо досягати нових висот.</p>
+    <hr class="my-4">
+    <p>Дізнайтеся більше про нас та наші послуги за наступними посиланнями:</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'about' %}" role="button">Про нас</a>
+    <a class="btn btn-secondary btn-lg" href="{% url 'services' %}" role="button">Наші послуги</a>
+</div>
+{% endblock %}

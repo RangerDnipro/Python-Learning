@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Завдання</h1>
+<ul>
+    {% for task in tasks %}
+        <li>
+            <strong>{{ task.title }}</strong> - {{ task.description }}
+            (до {{ task.due_date|date:"d.m.Y H:i" }})
+            <br>
+            <small>Автор: {{ task.created_by.username }}</small>
+        </li>
+    {% endfor %}
+</ul>
+
+{% if user.is_authenticated %}
+    <h2>Додати завдання</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn btn-primary">Додати</button>
+    </form>
+{% else %}
+    <p>Увійдіть, щоб мати можливість додавати нові завдання.</p>
+{% endif %}
+{% endblock %}

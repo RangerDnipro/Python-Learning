@@ -1,0 +1,16 @@
+{% extends 'accounts/base.html' %}
+{% load static %}
+
+{% block title %}Видалення облікового запису{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2>Видалення облікового запису</h2>
+    <p>Ви впевнені, що хочете видалити свій обліковий запис? Ця дія не може бути скасована.</p>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger">Так, видалити обліковий запис</button>
+        <a href="{% url 'profile' %}" class="btn btn-secondary">Скасувати</a>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'board/base.html' %}
+
+{% block title %}
+    {% if readonly %}
+        Перегляд оголошення
+    {% elif form.instance.pk %}
+        Редагувати оголошення
+    {% else %}
+        Створити нове оголошення
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    <h2>
+        {% if readonly %}
+            Перегляд оголошення
+        {% elif form.instance.pk %}
+            Редагувати оголошення
+        {% else %}
+            Створити нове оголошення
+        {% endif %}
+    </h2>
+
+    {% if readonly %}
+        <div class="mb-3">
+            <strong>Заголовок:</strong> {{ ad.title }}
+        </div>
+        <div class="mb-3">
+            <strong>Опис:</strong> {{ ad.description }}
+        </div>
+        <div class="mb-3">
+            <strong>Ціна:</strong> {{ ad.price }} грн
+        </div>
+        <div class="mb-3">
+            <strong>Категорія:</strong> {{ ad.category.name }}
+        </div>
+        <div class="mb-3">
+            <strong>Дата створення:</strong> {{ ad.created_at }}
+        </div>
+
+        <h3>Коментарі</h3>
+        {% if comments %}
+            <ul class="list-group mb-4">
+                {% for comment in comments %}
+                    <li class="list-group-item">
+                        <strong>{{ comment.user.username }}:</strong> {{ comment.content }}
+                        <br><small class="text-muted">{{ comment.created_at }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>Немає коментарів. Будьте першим, хто залишить коментар!</p>
+        {% endif %}
+
+        {% if user.is_authenticated %}
+            <h4>Залишити коментар:</h4>
+            <form method="post">
+                {% csrf_token %}
+                {{ comment_form.as_p }}
+                <button type="submit" class="btn btn-primary">Додати коментар</button>
+            </form>
+        {% else %}
+            <p>Будь ласка, <a href="{% url 'login' %}">увійдіть</a>, щоб залишити коментар.</p>
+        {% endif %}
+
+    {% else %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">
+                {% if form.instance.pk %}
+                    Зберегти зміни
+                {% else %}
+                    Створити оголошення
+                {% endif %}
+            </button>
+        </form>
+    {% endif %}
+
+    <a href="{% url 'home' %}" class="btn btn-secondary mt-2">Назад до оголошень</a>
+{% endblock %}

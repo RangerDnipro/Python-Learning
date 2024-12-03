@@ -1,0 +1,34 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Послуги{% endblock %}
+
+{% block content %}
+<div class="jumbotron text-center mt-4">
+    <h1 class="display-4">Наші послуги</h1>
+
+    <!-- Форма для пошуку послуг -->
+    <form method="get" action="{% url 'services' %}">
+        <div class="input-group mb-3">
+            <input type="text" name="q" class="form-control" placeholder="Пошук послуг..." value="{{ query }}">
+            <button class="btn btn-primary" type="submit">Шукати</button>
+        </div>
+    </form>
+
+    <!-- Відображення кількості послуг -->
+    <p>У нас є {{ services|length }} послуги для вас</p>
+
+    <!-- Список послуг -->
+    {% if services %}
+        <ul class="list-group">
+            {% for service in services %}
+                <li class="list-group-item">
+                    <h5 class="mb-1">{{ service.name }}</h5>
+                    <p>{{ service.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Послуги не знайдені за вашим запитом.</p>
+    {% endif %}
+</div>
+{% endblock %}
