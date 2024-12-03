@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Редагувати профіль{% endblock %}
+
+{% block content %}
+<h1 class="text-center">Редагувати профіль</h1>
+
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <div class="mb-3">
+        {{ form.as_p }}
+    </div>
+
+    {% if profile.avatar %}
+    <div class="mb-3">
+        <label>Поточна аватарка:</label><br>
+        <img src="{{ profile.avatar.url }}" alt="Аватар" style="width: 150px; height: 150px; border-radius: 50%;">
+    </div>
+    {% endif %}
+
+    <button type="submit" class="btn btn-primary">Зберегти</button>
+</form>
+{% endblock %}
