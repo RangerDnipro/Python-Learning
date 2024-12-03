@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Мій профіль{% endblock %}
+
+{% block content %}
+<h1>Профіль {{ profile.user.username }}</h1>
+<p>Email: {{ profile.user.email }}</p>
+<p>Біографія: {{ profile.bio|default:"Біографія не заповнена" }}</p>
+<p>Телефон: {{ profile.phone|default:"Телефон не вказаний" }}</p>
+{% if profile.avatar %}
+<img src="{{ profile.avatar.url }}" alt="Аватар" style="width: 150px; height: 150px; border-radius: 50%;">
+{% else %}
+<p>Аватар не завантажено.</p>
+{% endif %}
+<hr>
+<a href="{% url 'edit_profile' %}" class="btn btn-primary">Редагувати профіль</a>
+<a href="{% url 'delete_profile' %}" class="btn btn-danger">Видалити профіль</a>
+{% endblock %}
