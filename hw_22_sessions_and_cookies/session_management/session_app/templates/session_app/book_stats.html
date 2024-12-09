@@ -1,0 +1,67 @@
+<!-- book_stats.html -->
+
+{% extends "session_app/base.html" %}
+
+{% block content %}
+<h1>Статистика книг</h1>
+
+<h2>Середній рейтинг авторів</h2>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Автор</th>
+            <th>Середній рейтинг</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for author in authors %}
+        <tr>
+            <td>{{ author.name }}</td>
+            <td>{{ author.avg_rating|floatformat:2|default:"Немає оцінок" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Книги</h2>
+<table class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>Назва книги</th>
+            <th>
+                <a href="?sort=review_count&direction={% if current_sort_field == 'review_count' and current_sort_direction == 'asc' %}desc{% else %}asc{% endif %}">
+                    Кількість відгуків
+                    {% if current_sort_field == 'review_count' %}
+                        {% if current_sort_direction == 'asc' %}
+                            <i class="bi bi-sort-up"></i>
+                        {% else %}
+                            <i class="bi bi-sort-down"></i>
+                        {% endif %}
+                    {% endif %}
+                </a>
+            </th>
+            <th>
+                <a href="?sort=avg_rating&direction={% if current_sort_field == 'avg_rating' and current_sort_direction == 'asc' %}desc{% else %}asc{% endif %}">
+                    Середній рейтинг
+                    {% if current_sort_field == 'avg_rating' %}
+                        {% if current_sort_direction == 'asc' %}
+                            <i class="bi bi-sort-up"></i>
+                        {% else %}
+                            <i class="bi bi-sort-down"></i>
+                        {% endif %}
+                    {% endif %}
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for book in books %}
+        <tr>
+            <td>{{ book.title }}</td>
+            <td>{{ book.review_count }}</td>
+            <td>{{ book.avg_rating|floatformat:2|default:"Немає оцінок" }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

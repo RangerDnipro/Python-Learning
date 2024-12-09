@@ -1,0 +1,14 @@
+{% extends "session_app/base.html" %}
+
+{% block content %}
+<h1>Статистика Raw SQL</h1>
+<h2>Автори з книгами, що мають більше 10 відгуків</h2>
+<ul>
+    {% for author in authors %}
+    <li>{{ author.1 }} (ID: {{ author.0 }})</li>
+    {% endfor %}
+</ul>
+
+<h2>Загальна кількість книг</h2>
+<p>{{ total_books }}</p>
+{% endblock %}
