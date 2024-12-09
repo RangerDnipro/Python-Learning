@@ -1,0 +1,12 @@
+{% extends "session_app/base.html" %}
+
+{% block title %}Введення даних{% endblock %}
+
+{% block content %}
+    <h1>Введіть ваші дані</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary" type="submit">Зберегти</button>
+    </form>
+{% endblock %}

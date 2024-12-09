@@ -1,0 +1,13 @@
+{% extends "session_app/base.html" %}
+
+{% block title %}Статус завантаження{% endblock %}
+
+{% block content %}
+<h1>Імпорт розпочато!</h1>
+<p>Завдання ID: {{ task_id }}</p>
+<p>
+    <a href="{% url 'task_status' task_id %}" class="btn btn-primary">
+        Перевірити статус завдання
+    </a>
+</p>
+{% endblock %}

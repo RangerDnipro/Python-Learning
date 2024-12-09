@@ -1,0 +1,20 @@
+{% extends "session_app/base.html" %}
+
+{% block title %}Books Without Optimization{% endblock %}
+
+{% block content %}
+    <h1>Books without Optimization</h1>
+    <ul class="list-group">
+        {% for book in books_data %}
+        <li class="list-group-item">
+            <strong>{{ book.title }}</strong> by {{ book.author }}
+            <br>Reviews:
+            <ul>
+                {% for review in book.reviews %}
+                <li>{{ review.text }} (Rating: {{ review.rating }})</li>
+                {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

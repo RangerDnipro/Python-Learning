@@ -1,0 +1,11 @@
+{% extends "session_app/base.html" %}
+
+{% block title %}Статус завдання{% endblock %}
+
+{% block content %}
+<h1>Статус завдання</h1>
+<p>Статус: {{ task.status }}</p>
+{% if task.result %}
+<p>Результат: {{ task.result }}</p>
+{% endif %}
+{% endblock %}

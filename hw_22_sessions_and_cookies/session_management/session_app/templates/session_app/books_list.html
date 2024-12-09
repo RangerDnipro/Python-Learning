@@ -1,0 +1,21 @@
+{% extends "session_app/base.html" %}
+
+{% block title %}Список книг{% endblock %}
+
+{% block content %}
+<h1>Список книг</h1>
+<ul class="list-group">
+    {% for book in books %}
+    <li class="list-group-item">
+        <strong>{{ book.title }}</strong> by {{ book.author.name }}
+        <br>Дата публікації: {{ book.publication_date|date:"d M Y" }}
+        <br>Відгуки:
+        <ul>
+            {% for review in book.reviews.all %}
+            <li>{{ review.review_text }} (Оцінка: {{ review.rating }})</li>
+            {% endfor %}
+        </ul>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
