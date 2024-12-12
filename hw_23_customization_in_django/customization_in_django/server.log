@@ -1,0 +1,1053 @@
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\middleware.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\customization_in_django\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\middleware.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\customization_in_django\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\customization_in_django\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3073
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 5745
+Запит GET до /api/custom-models/
+Відповідь 200 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 200 14032
+Watching for file changes with StatReloader
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6028
+Запит POST до /form/
+Відповідь 302 для /form/
+"POST /form/ HTTP/1.1" 302 0
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6344
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6344
+Запит GET до /api/custom-models/
+Відповідь 200 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 200 14578
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3073
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6619
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6619
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3238
+Запит GET до /profile/edit/
+Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 512, in __get__
+    rel_obj = self.related.get_cached_value(instance)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\fields\mixins.py", line 37, in get_cached_value
+    return instance._state.fields_cache[self.cache_name]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'profile'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: custom_app_profile
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 114, in edit_profile
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 520, in __get__
+    rel_obj = self.get_queryset(instance=instance).get(**filter_args)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 645, in get
+    num = len(clone)
+          ^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: custom_app_profile
+Відповідь 500 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 500 156378
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3238
+Запит GET до /profile/edit/
+Internal Server Error: /profile/edit/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 114, in edit_profile
+    profile = request.user.profile
+              ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 531, in __get__
+    raise self.RelatedObjectDoesNotExist(
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+Відповідь 500 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 500 81134
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3238
+Запит GET до /profile/edit/
+Відповідь 200 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 200 3690
+Запит POST до /profile/edit/
+Відповідь 302 для /profile/edit/
+"POST /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/edit/
+Відповідь 200 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 200 3712
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\urls.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3238
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3344
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3344
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3344
+Запит POST до /logout/
+Відповідь 302 для /logout/
+"POST /logout/ HTTP/1.1" 302 0
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 2197
+Запит GET до /login/
+Відповідь 200 для /login/
+"GET /login/ HTTP/1.1" 200 2738
+Запит POST до /login/
+Відповідь 302 для /login/
+"POST /login/ HTTP/1.1" 302 0
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3138
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3138
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3138
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3138
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3153
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3153
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3153
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3153
+Запит GET до /profile/edit/
+Відповідь 302 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3153
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /profile/edit/
+Відповідь 200 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 200 3628
+Запит POST до /profile/edit/
+Відповідь 302 для /profile/edit/
+"POST /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3147
+Запит GET до /profile/edit/
+Відповідь 200 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 200 3791
+Запит POST до /profile/edit/
+Відповідь 302 для /profile/edit/
+"POST /profile/edit/ HTTP/1.1" 302 0
+Запит GET до /profile/
+Відповідь 200 для /profile/
+"GET /profile/ HTTP/1.1" 200 3147
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Internal Server Error: /form/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 51, in form_view
+    return render(request, 'custom_app/form.html', {'form': form, 'texts': texts})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /form/
+"GET /form/ HTTP/1.1" 500 203930
+Запит GET до /api/custom-models/
+Internal Server Error: /api/custom-models/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 97, in get
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 500 171636
+Запит GET до /profile/edit/
+Відповідь 200 для /profile/edit/
+"GET /profile/edit/ HTTP/1.1" 200 3791
+Запит GET до /form/
+Internal Server Error: /form/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 51, in form_view
+    return render(request, 'custom_app/form.html', {'form': form, 'texts': texts})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /form/
+"GET /form/ HTTP/1.1" 500 203620
+Запит GET до /form/
+Internal Server Error: /form/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 51, in form_view
+    return render(request, 'custom_app/form.html', {'form': form, 'texts': texts})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /form/
+"GET /form/ HTTP/1.1" 500 203620
+Запит GET до /api/custom-models/
+Internal Server Error: /api/custom-models/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 97, in get
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\rest_framework\serializers.py", line 714, in to_representation
+    self.child.to_representation(item) for item in iterable
+                                                   ^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 500 171326
+Запит GET до /form/
+Internal Server Error: /form/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: custom_app_custommodel.hex_color
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 51, in form_view
+    return render(request, 'custom_app/form.html', {'form': form, 'texts': texts})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\template\defaulttags.py", line 199, in render
+    len_values = len(values)
+                 ^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 382, in __len__
+    self._fetch_all()
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1574, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 354, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: custom_app_custommodel.hex_color
+Відповідь 500 для /form/
+"GET /form/ HTTP/1.1" 500 203620
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6794
+Запит POST до /form/
+Відповідь 302 для /form/
+"POST /form/ HTTP/1.1" 302 0
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 7086
+Запит GET до /api/custom-models/
+Відповідь 200 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 200 13408
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 7086
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6811
+Запит POST до /form/
+Internal Server Error: /form/
+Traceback (most recent call last):
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\project_01\python\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py", line 42, in form_view
+    phone_number=form.cleaned_data['phone_number'],
+                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'phone_number'
+Відповідь 500 для /form/
+"POST /form/ HTTP/1.1" 500 68756
+D:\Documents\Python\Hillel\HomeWorks\hw_23_customization_in_django\customization_in_django\custom_app\views.py changed, reloading.
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6811
+Запит GET до /api/custom-models/
+Відповідь 200 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 200 13408
+Запит POST до /form/
+Відповідь 302 для /form/
+"POST /form/ HTTP/1.1" 302 0
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 7101
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6799
+Запит POST до /form/
+Відповідь 302 для /form/
+"POST /form/ HTTP/1.1" 302 0
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6966
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 6860
+Запит POST до /form/
+Відповідь 302 для /form/
+"POST /form/ HTTP/1.1" 302 0
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 7014
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3042
+Запит GET до /filter-by-color/
+Відповідь 200 для /filter-by-color/
+"GET /filter-by-color/ HTTP/1.1" 200 3481
+Запит GET до /filter-by-color/
+Відповідь 200 для /filter-by-color/
+"GET /filter-by-color/?hex_color=%23FFFFFF HTTP/1.1" 200 3481
+Запит GET до /filter-by-color/
+Відповідь 200 для /filter-by-color/
+"GET /filter-by-color/?hex_color=%23AAAAAA HTTP/1.1" 200 3645
+Запит GET до /aggregate-by-color/
+Відповідь 200 для /aggregate-by-color/
+"GET /aggregate-by-color/ HTTP/1.1" 200 3698
+Watching for file changes with StatReloader
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3396
+Запит GET до /filter-by-color/
+Відповідь 200 для /filter-by-color/
+"GET /filter-by-color/ HTTP/1.1" 200 3835
+Запит GET до /aggregate-by-color/
+Відповідь 200 для /aggregate-by-color/
+"GET /aggregate-by-color/ HTTP/1.1" 200 4052
+Запит GET до /filter-by-color/
+Відповідь 200 для /filter-by-color/
+"GET /filter-by-color/ HTTP/1.1" 200 3835
+Запит GET до /api/custom-models/
+Відповідь 200 для /api/custom-models/
+"GET /api/custom-models/ HTTP/1.1" 200 14848
+Запит GET до /form/
+Відповідь 200 для /form/
+"GET /form/ HTTP/1.1" 200 7368
+Запит GET до /
+Відповідь 200 для /
+"GET / HTTP/1.1" 200 3396
