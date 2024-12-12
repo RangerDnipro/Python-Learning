@@ -1,0 +1,47 @@
+{% extends 'custom_app/base.html' %}
+
+{% load custom_filters %}
+
+{% block title %}Форма{% endblock title %}
+
+{% block content %}
+<h1>Заповніть форму</h1>
+<form method="post" class="mb-3">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="mb-3">
+        <label for="id_hex_color">Вибраний колір:</label>
+        <div id="color-preview" style="width: 50px; height: 20px; margin-top: 5px; background-color: {{ form.hex_color.value|default:'#FFFFFF' }}; border: 1px solid #000;"></div>
+    </div>
+    <button type="submit" class="btn btn-primary">Надіслати</button>
+</form>
+
+<h2>Глобальна інформація</h2>
+<p><strong>Усього текстів у системі:</strong> {{ total_custom_texts }}</p>
+<p><strong>Сьогоднішня дата:</strong> {{ current_date }}</p>
+<p><strong>Загальна кількість запитів:</strong> {{ total_requests }}</p>
+
+<h2>Попередні тексти</h2>
+<ul class="list-group">
+    {% for text in texts %}
+        <li class="list-group-item" style="color: {{ text.hex_color|default:'#000000' }};">
+            <strong>{{ text.name|to_lowercase }}</strong> ({{ text.description }})
+        </li>
+    {% empty %}
+        <li class="list-group-item">Ще немає текстів.</li>
+    {% endfor %}
+</ul>
+
+<script>
+    // Динамічне оновлення попереднього вигляду кольору
+    document.getElementById('id_hex_color').addEventListener('input', function () {
+        const color = this.value;
+        const preview = document.getElementById('color-preview');
+        if (/^#(?:[0-9a-fA-F]{3}){1,2}$/.test(color)) {
+            preview.style.backgroundColor = color;
+        } else {
+            preview.style.backgroundColor = '#FFFFFF'; // Колір за замовчуванням
+        }
+    });
+</script>
+{% endblock content %}

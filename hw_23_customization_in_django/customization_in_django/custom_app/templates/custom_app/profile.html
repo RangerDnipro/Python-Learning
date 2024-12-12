@@ -1,0 +1,10 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Профіль{% endblock title %}
+
+{% block content %}
+<h1>Ваш профіль</h1>
+<p><strong>Ім'я користувача:</strong> {{ profile.user.username }}</p>
+<p><strong>Телефонний номер:</strong> {{ profile.phone_number|default:"Не вказано" }}</p>
+<a href="{% url 'edit_profile' %}" class="btn btn-primary">Редагувати профіль</a>
+{% endblock content %}

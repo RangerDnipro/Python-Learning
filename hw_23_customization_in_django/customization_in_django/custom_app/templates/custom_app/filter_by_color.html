@@ -1,0 +1,21 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Фільтр за кольором{% endblock title %}
+
+{% block content %}
+<h1>Тексти з кольором: {{ hex_color }}</h1>
+<ul class="list-group">
+    {% for text in texts %}
+        <li class="list-group-item" style="color: {{ text.hex_color|default:'#000000' }};">
+            <strong>{{ text.name }}</strong> ({{ text.description }})
+        </li>
+    {% empty %}
+        <li class="list-group-item">Тексти з таким кольором не знайдені.</li>
+    {% endfor %}
+</ul>
+<form method="get">
+    <label for="hex_color">Введіть HEX-код кольору:</label>
+    <input type="text" id="hex_color" name="hex_color" value="{{ hex_color }}" class="form-control" placeholder="#FFFFFF">
+    <button type="submit" class="btn btn-primary mt-2">Фільтрувати</button>
+</form>
+{% endblock content %}

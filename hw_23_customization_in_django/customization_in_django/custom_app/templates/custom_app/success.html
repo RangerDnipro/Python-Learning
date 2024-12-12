@@ -1,0 +1,10 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Успішно Оброблено{% endblock title %}
+
+{% block content %}
+<h1>Форма успішно оброблена</h1>
+<p><strong>Ім'я:</strong> {{ name }}</p>
+<p><strong>Категорія:</strong> {{ category }}</p>
+<a href="/form/" class="btn btn-success">Заповнити форму ще раз</a>
+{% endblock content %}
