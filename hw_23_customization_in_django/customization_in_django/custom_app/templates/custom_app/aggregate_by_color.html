@@ -1,0 +1,27 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Агрегація текстів за кольорами{% endblock title %}
+
+{% block content %}
+<h1>Агрегація текстів за кольорами</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>HEX-код кольору</th>
+            <th>Кількість текстів</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for stat in color_stats %}
+        <tr>
+            <td style="color: {{ stat.hex_color|default:'#000000' }};">{{ stat.hex_color|default:"Не вказано" }}</td>
+            <td>{{ stat.total }}</td>
+        </tr>
+        {% empty %}
+        <tr>
+            <td colspan="2">Немає даних для відображення.</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock content %}

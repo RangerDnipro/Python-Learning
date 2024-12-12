@@ -1,0 +1,12 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Реєстрація{% endblock title %}
+
+{% block content %}
+<h1>Реєстрація нового користувача</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Зареєструватися</button>
+</form>
+{% endblock content %}

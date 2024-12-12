@@ -1,0 +1,12 @@
+{% extends 'custom_app/base.html' %}
+
+{% block title %}Вхід{% endblock title %}
+
+{% block content %}
+<h1>Вхід до системи</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Увійти</button>
+</form>
+{% endblock content %}
