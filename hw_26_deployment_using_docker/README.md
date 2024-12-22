@@ -1,10 +1,9 @@
 # ДЗ 26. Deployment of Flask and Django applications using Docker
 
 ## 1. Перевірка на іншому комп'ютері
+
 1. Склонуйте цей репозиторій `hw_26_deployment_using_docker`
-2. Перейдіть у потрібну папку (`flask_app/` або `django_app/`).
-3. Встановіть залежності з відповідного `requirements.txt`
-4. Запустіть Docker Compose
+2. Запустіть програму Docker Compose
 
 ## 2. Flask Application
 
@@ -38,7 +37,3 @@ Django-застосунок, який виводить текст `Django in Doc
 - `.git`
 - `__pycache__`
 - Локальні бази даних (для Django)
-
-## 4. Вимоги
-- Docker
-- Docker Compose
