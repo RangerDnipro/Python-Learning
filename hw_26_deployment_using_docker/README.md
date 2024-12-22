@@ -46,4 +46,5 @@ Django-застосунок, який виводить текст `Django in Doc
 ## 5. Перевірка на іншому комп'ютері
 1. Склонуйте цей репозиторій `hw_26_deployment_using_docker`
 2. Перейдіть у потрібну папку (`flask_app/` або `django_app/`).
+3. Встановіть залежності з відповідного requirements.txt
 3. Запустіть `docker-compose up --build`.
