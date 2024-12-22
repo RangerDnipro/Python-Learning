@@ -44,9 +44,6 @@ Django-застосунок, який виводить текст `Django in Doc
 - Docker Compose
 
 ## 5. Перевірка на іншому комп'ютері
-1. Склонуйте репозиторій:
-   ```bash
-   git clone https://github.com/RangerDnipro/Python-Learning/tree/main/hw_26_deployment_using_docker
-   ```
+1. Склонуйте цей репозиторій `hw_26_deployment_using_docker`
 2. Перейдіть у потрібну папку (`flask_app/` або `django_app/`).
 3. Запустіть `docker-compose up --build`.
