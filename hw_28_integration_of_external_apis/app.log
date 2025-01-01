@@ -1,0 +1,512 @@
+2025-01-01 22:21:14,315 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getMe "HTTP/1.1 200 OK"
+2025-01-01 22:21:14,367 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-01 22:21:14,368 - INFO - Application started
+2025-01-01 22:21:18,533 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:18,534 - INFO - Команда /start отримана від користувача 108422278.
+2025-01-01 22:21:18,606 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:21:21,087 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:21,088 - INFO - Команда /help отримана від користувача 108422278.
+2025-01-01 22:21:21,223 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:21:23,072 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:23,072 - INFO - Команда /weather отримана від користувача 108422278.
+2025-01-01 22:21:23,152 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:21:25,678 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:25,737 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:25,737 - INFO - Користувач обрав місто: Київ
+2025-01-01 22:21:25,831 - INFO - Успішний запит для міста 'Київ': Погода в Київ: 6.86°C, хмарно.
+2025-01-01 22:21:25,831 - INFO - Новий запит для міста 'Київ' виконано.
+2025-01-01 22:21:25,899 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:30,810 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:30,875 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:30,875 - INFO - Користувач обрав місто: Львів
+2025-01-01 22:21:30,952 - INFO - Успішний запит для міста 'Львів': Погода в Львів: 4.92°C, рвані хмари.
+2025-01-01 22:21:30,952 - INFO - Новий запит для міста 'Львів' виконано.
+2025-01-01 22:21:31,031 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:33,708 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:33,765 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:33,765 - INFO - Користувач обрав місто: Одеса
+2025-01-01 22:21:33,846 - INFO - Успішний запит для міста 'Одеса': Погода в Одеса: 4.92°C, чисте небо.
+2025-01-01 22:21:33,846 - INFO - Новий запит для міста 'Одеса' виконано.
+2025-01-01 22:21:33,933 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:42,700 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:42,701 - INFO - Користувач ввів місто вручну: Кропивницький
+2025-01-01 22:21:42,798 - INFO - Успішний запит для міста 'Кропивницький': Погода в Кропивницький: 2.98°C, чисте небо.
+2025-01-01 22:21:42,798 - INFO - Новий запит для міста 'Кропивницький' виконано.
+2025-01-01 22:21:42,975 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:21:47,032 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:47,112 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:47,113 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:21:47,199 - INFO - Успішний запит для міста 'Дніпро': Погода в Дніпро: 3.96°C, кілька хмар.
+2025-01-01 22:21:47,199 - INFO - Новий запит для міста 'Дніпро' виконано.
+2025-01-01 22:21:47,282 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:49,489 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:49,564 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:49,564 - INFO - Користувач обрав місто: Харків
+2025-01-01 22:21:49,646 - INFO - Успішний запит для міста 'Харків': Погода в Харків: 4.35°C, хмарно.
+2025-01-01 22:21:49,647 - INFO - Новий запит для міста 'Харків' виконано.
+2025-01-01 22:21:49,730 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:50,817 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:51,017 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:51,017 - INFO - Користувач обрав місто: Одеса
+2025-01-01 22:21:51,017 - INFO - Кешований результат для міста 'Одеса' використано.
+2025-01-01 22:21:51,209 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:51,864 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:51,914 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:51,915 - INFO - Користувач обрав місто: Львів
+2025-01-01 22:21:51,915 - INFO - Кешований результат для міста 'Львів' використано.
+2025-01-01 22:21:51,995 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:21:52,883 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:21:52,937 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:21:52,937 - INFO - Користувач обрав місто: Київ
+2025-01-01 22:21:52,937 - INFO - Кешований результат для міста 'Київ' використано.
+2025-01-01 22:21:53,002 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:22:02,934 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:11,421 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:11,647 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:22:11,647 - INFO - Користувач обрав місто: Київ
+2025-01-01 22:22:11,647 - INFO - Кешований результат для міста 'Київ' використано.
+2025-01-01 22:22:11,814 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 400 Bad Request"
+2025-01-01 22:22:11,814 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\bot.py", line 95, in button_handler
+    await query.edit_message_text(
+    ...<2 lines>...
+    )
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_message.py", line 3782, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 1701, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 4160, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 610, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 731, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 383, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-01-01 22:22:12,543 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:12,704 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:22:12,704 - INFO - Користувач обрав місто: Львів
+2025-01-01 22:22:12,704 - INFO - Кешований результат для міста 'Львів' використано.
+2025-01-01 22:22:12,876 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:22:14,919 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:14,978 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:22:14,978 - INFO - Користувач обрав місто: Одеса
+2025-01-01 22:22:14,978 - INFO - Кешований результат для міста 'Одеса' використано.
+2025-01-01 22:22:15,042 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:22:16,567 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:16,654 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:22:16,654 - INFO - Користувач обрав місто: Харків
+2025-01-01 22:22:16,654 - INFO - Кешований результат для міста 'Харків' використано.
+2025-01-01 22:22:16,741 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:22:18,072 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:18,154 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:22:18,154 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:22:18,154 - INFO - Кешований результат для міста 'Дніпро' використано.
+2025-01-01 22:22:18,249 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:22:25,352 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:25,352 - INFO - Користувач ввів місто вручну: Полтава
+2025-01-01 22:22:25,436 - INFO - Успішний запит для міста 'Полтава': Погода в Полтава: 3.51°C, рвані хмари.
+2025-01-01 22:22:25,436 - INFO - Новий запит для міста 'Полтава' виконано.
+2025-01-01 22:22:25,620 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:22:35,483 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:45,784 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:22:55,861 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:05,913 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:15,494 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:15,494 - INFO - Application is stopping. This might take a moment.
+2025-01-01 22:23:15,494 - INFO - Application.stop() complete
+2025-01-01 22:23:18,728 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getMe "HTTP/1.1 200 OK"
+2025-01-01 22:23:18,775 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-01 22:23:18,776 - INFO - Application started
+2025-01-01 22:23:21,437 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:21,438 - INFO - Команда /weather отримана від користувача 108422278.
+2025-01-01 22:23:21,514 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:23:26,309 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:26,419 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:23:26,420 - INFO - Користувач обрав місто: Київ
+2025-01-01 22:23:26,500 - INFO - Успішний запит для міста 'Київ': Погода в Київ: 6.86°C, хмарно.
+2025-01-01 22:23:26,500 - INFO - Новий запит для міста 'Київ' виконано.
+2025-01-01 22:23:26,648 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:23:29,499 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:29,554 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:23:29,555 - INFO - Користувач обрав місто: Львів
+2025-01-01 22:23:29,633 - INFO - Успішний запит для міста 'Львів': Погода в Львів: 4.92°C, рвані хмари.
+2025-01-01 22:23:29,633 - INFO - Новий запит для міста 'Львів' виконано.
+2025-01-01 22:23:29,698 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:23:30,934 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:30,988 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:23:30,989 - INFO - Користувач обрав місто: Одеса
+2025-01-01 22:23:31,066 - INFO - Успішний запит для міста 'Одеса': Погода в Одеса: 4.92°C, чисте небо.
+2025-01-01 22:23:31,066 - INFO - Новий запит для міста 'Одеса' виконано.
+2025-01-01 22:23:31,140 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:23:32,250 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:32,302 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:23:32,303 - INFO - Користувач обрав місто: Харків
+2025-01-01 22:23:32,379 - INFO - Успішний запит для міста 'Харків': Погода в Харків: 4.35°C, хмарно.
+2025-01-01 22:23:32,379 - INFO - Новий запит для міста 'Харків' виконано.
+2025-01-01 22:23:32,450 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:23:33,638 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:33,693 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:23:33,694 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:23:33,775 - INFO - Успішний запит для міста 'Дніпро': Погода в Дніпро: 3.96°C, кілька хмар.
+2025-01-01 22:23:33,776 - INFO - Новий запит для міста 'Дніпро' виконано.
+2025-01-01 22:23:33,840 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:23:41,514 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:41,515 - INFO - Користувач ввів місто вручну: Полтава
+2025-01-01 22:23:41,599 - INFO - Успішний запит для міста 'Полтава': Погода в Полтава: 3.51°C, рвані хмари.
+2025-01-01 22:23:41,599 - INFO - Новий запит для міста 'Полтава' виконано.
+2025-01-01 22:23:41,759 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:23:51,648 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:52,804 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:23:52,804 - INFO - Користувач ввів місто вручну: Пятихатки
+2025-01-01 22:23:52,894 - INFO - Успішний запит для міста 'Пятихатки': Погода в Пятихатки: 2.32°C, чисте небо.
+2025-01-01 22:23:52,895 - INFO - Новий запит для міста 'Пятихатки' виконано.
+2025-01-01 22:23:53,068 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:24:02,943 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:07,144 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:07,145 - INFO - Користувач ввів місто вручну: Жовті води
+2025-01-01 22:24:07,231 - INFO - Успішний запит для міста 'Жовті води': Погода в Жовті води: 2.25°C, чисте небо.
+2025-01-01 22:24:07,231 - INFO - Новий запит для міста 'Жовті води' виконано.
+2025-01-01 22:24:07,444 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:24:17,278 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:21,076 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:21,077 - INFO - Користувач ввів місто вручну: Невідомо
+2025-01-01 22:24:21,182 - ERROR - Помилка: не вдалося отримати дані про погоду для міста 'Невідомо'.
+2025-01-01 22:24:21,182 - INFO - Новий запит для міста 'Невідомо' виконано.
+2025-01-01 22:24:21,349 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:24:31,230 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:32,375 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:36,753 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:46,803 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:24:56,854 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:06,903 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:16,952 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:27,004 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:37,053 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:47,104 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:25:57,155 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:07,203 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:17,249 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:27,296 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:37,345 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:47,393 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:54,012 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:54,013 - INFO - Application is stopping. This might take a moment.
+2025-01-01 22:26:54,013 - INFO - Application.stop() complete
+2025-01-01 22:26:56,807 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getMe "HTTP/1.1 200 OK"
+2025-01-01 22:26:56,850 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/deleteWebhook "HTTP/1.1 200 OK"
+2025-01-01 22:26:56,851 - INFO - Application started
+2025-01-01 22:26:59,078 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:26:59,079 - WARNING - Невідома команда від користувача 108422278: /wrong
+2025-01-01 22:26:59,150 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:01,079 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:01,080 - INFO - Команда /help отримана від користувача 108422278.
+2025-01-01 22:27:01,143 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:05,535 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:05,535 - INFO - Команда /start отримана від користувача 108422278.
+2025-01-01 22:27:05,596 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:07,057 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:07,057 - INFO - Команда /help отримана від користувача 108422278.
+2025-01-01 22:27:07,122 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:08,422 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:08,423 - INFO - Команда /weather отримана від користувача 108422278.
+2025-01-01 22:27:08,497 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:10,024 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:10,086 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:27:10,086 - INFO - Користувач обрав місто: Київ
+2025-01-01 22:27:10,182 - INFO - Успішний запит для міста 'Київ': Погода в Київ: 6.86°C, хмарно.
+2025-01-01 22:27:10,182 - INFO - Новий запит для міста 'Київ' виконано.
+2025-01-01 22:27:10,245 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:27:13,612 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:13,676 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:27:13,677 - INFO - Користувач обрав місто: Львів
+2025-01-01 22:27:13,766 - INFO - Успішний запит для міста 'Львів': Погода в Львів: 4.92°C, рвані хмари.
+2025-01-01 22:27:13,766 - INFO - Новий запит для міста 'Львів' виконано.
+2025-01-01 22:27:13,826 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:27:15,326 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:15,421 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:27:15,421 - INFO - Користувач обрав місто: Одеса
+2025-01-01 22:27:15,515 - INFO - Успішний запит для міста 'Одеса': Погода в Одеса: 4.92°C, чисте небо.
+2025-01-01 22:27:15,516 - INFO - Новий запит для міста 'Одеса' виконано.
+2025-01-01 22:27:15,614 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:27:16,900 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:17,003 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:27:17,003 - INFO - Користувач обрав місто: Харків
+2025-01-01 22:27:17,092 - INFO - Успішний запит для міста 'Харків': Погода в Харків: 4.35°C, хмарно.
+2025-01-01 22:27:17,092 - INFO - Новий запит для міста 'Харків' виконано.
+2025-01-01 22:27:17,188 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:27:18,718 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:18,770 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:27:18,770 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:27:18,865 - INFO - Успішний запит для міста 'Дніпро': Погода в Дніпро: 3.96°C, кілька хмар.
+2025-01-01 22:27:18,866 - INFO - Новий запит для міста 'Дніпро' виконано.
+2025-01-01 22:27:18,926 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 200 OK"
+2025-01-01 22:27:25,972 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:25,972 - INFO - Користувач ввів місто вручну: Кропивницький
+2025-01-01 22:27:26,072 - INFO - Успішний запит для міста 'Кропивницький': Погода в Кропивницький: 2.98°C, чисте небо.
+2025-01-01 22:27:26,073 - INFO - Новий запит для міста 'Кропивницький' виконано.
+2025-01-01 22:27:26,288 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:32,551 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:32,552 - INFO - Користувач ввів місто вручну: Невідомо
+2025-01-01 22:27:32,651 - ERROR - Помилка: не вдалося отримати дані про погоду для міста 'Невідомо'.
+2025-01-01 22:27:32,652 - INFO - Новий запит для міста 'Невідомо' виконано.
+2025-01-01 22:27:32,813 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:27:42,700 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:27:52,748 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:02,794 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:12,841 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:22,925 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:32,971 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:43,020 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:28:53,066 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:03,111 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:13,155 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:23,198 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:33,267 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:43,315 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:49,283 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:49,436 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:29:49,436 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:29:49,436 - INFO - Кешований результат для міста 'Дніпро' використано.
+2025-01-01 22:29:49,505 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 400 Bad Request"
+2025-01-01 22:29:49,506 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\bot.py", line 95, in button_handler
+    await query.edit_message_text(
+    ...<2 lines>...
+    )
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_message.py", line 3782, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 1701, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 4160, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 610, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 731, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 383, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-01-01 22:29:50,289 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:29:50,408 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/answerCallbackQuery "HTTP/1.1 200 OK"
+2025-01-01 22:29:50,408 - INFO - Користувач обрав місто: Дніпро
+2025-01-01 22:29:50,408 - INFO - Кешований результат для міста 'Дніпро' використано.
+2025-01-01 22:29:50,527 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/editMessageText "HTTP/1.1 400 Bad Request"
+2025-01-01 22:29:50,527 - ERROR - No error handlers are registered, logging exception.
+Traceback (most recent call last):
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_application.py", line 1325, in process_update
+    await coroutine
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_handlers\basehandler.py", line 158, in handle_update
+    return await self.callback(update, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\bot.py", line 95, in button_handler
+    await query.edit_message_text(
+    ...<2 lines>...
+    )
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_callbackquery.py", line 269, in edit_message_text
+    return await self._get_message().edit_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_message.py", line 3782, in edit_text
+    return await self.get_bot().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 1701, in edit_message_text
+    return await super().edit_message_text(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<15 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 4160, in edit_message_text
+    return await self._send_message(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 610, in _send_message
+    result = await super()._send_message(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<21 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 731, in _send_message
+    result = await self._post(
+             ^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 619, in _post
+    return await self._do_post(
+           ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\ext\_extbot.py", line 354, in _do_post
+    return await super()._do_post(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\_bot.py", line 648, in _do_post
+    result = await request.post(
+             ^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 202, in post
+    result = await self._request_wrapper(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+    )
+    ^
+  File "D:\Documents\Python\Hillel\HomeWorks\hw_28_integration_of_external_apis\.venv\Lib\site-packages\telegram\request\_baserequest.py", line 383, in _request_wrapper
+    raise BadRequest(message)
+telegram.error.BadRequest: Message is not modified: specified new message content and reply markup are exactly the same as a current content and reply markup of the message
+2025-01-01 22:30:00,348 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:10,397 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:20,442 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:20,837 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:20,838 - INFO - Користувач ввів місто вручну: Кропивницький
+2025-01-01 22:30:20,838 - INFO - Кешований результат для міста 'Кропивницький' використано.
+2025-01-01 22:30:21,005 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:30:30,884 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:40,932 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:30:51,092 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:01,149 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:11,194 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:21,245 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:31,292 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:41,338 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:31:51,386 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:01,434 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:11,479 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:15,335 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:15,335 - WARNING - Невідома команда від користувача 108422278: /wrong
+2025-01-01 22:32:15,510 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/sendMessage "HTTP/1.1 200 OK"
+2025-01-01 22:32:25,389 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:35,444 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:45,496 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:32:55,540 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:33:05,589 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:33:15,638 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:33:25,685 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:33:29,807 - INFO - HTTP Request: POST https://api.telegram.org/bot7252439456:AAHvlm8L-XRwoCEoM6VpTXS6mEreQ8h2CmA/getUpdates "HTTP/1.1 200 OK"
+2025-01-01 22:33:29,807 - INFO - Application is stopping. This might take a moment.
+2025-01-01 22:33:29,807 - INFO - Application.stop() complete
