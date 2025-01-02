@@ -1,0 +1,17 @@
+<!-- home.html -->
+{% extends 'shortener/base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>Shorten your URL</h1>
+<form method="post" class="form-inline">
+    {% csrf_token %}
+    <div class="form-group mb-2">
+        {{ form.as_p }}
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Shorten</button>
+</form>
+{% if short_url %}
+    <p>Short URL: <a href="{{ short_url }}">{{ short_url }}</a></p>
+    <p>Clicks: {{ clicks }}</p>
+{% endif %}
+{% endblock %}
